@@ -1,0 +1,67 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BlogHero from '@/components/blog/BlogHero.astro';
+
+// Legacy BlogListing order: entries without publishedDate first (collection id
+// order: firefighting, wfmz), then by publishedDate descending.
+const all = await getCollection('articles', ({ data }) => !data.draft);
+const dated = all.filter((e) => e.data.publishedDate);
+const undated = all.filter((e) => !e.data.publishedDate);
+dated.sort((a, b) => b.data.publishedDate - a.data.publishedDate);
+const posts = [...undated, ...dated];
+---
+<BaseLayout
+  title="Security Guard Services Blog | Hamburg, PA | KRE Security LLC."
+  description="We provide qualified, educated and professional law enforcement, security services protection, and investigation service for Berks, Lehigh, Montgomery, Bucks county and surrounding areas. Check out our blog to learn more about security and keeping your home or business safe."
+>
+  <BlogHero />
+
+  <section class="bg-background py-20" data-ps="blog/BlogListing.astro">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {posts.map((post, i) => (
+          <a
+            href={`/post/${post.id}/`}
+            class={`tactical-frame bg-surface group block hover:border-primary transition-colors duration-150 reveal reveal-delay-${Math.min(i + 1, 5)}`}
+          >
+            {post.data.featuredImage && (
+              <div class="overflow-hidden">
+                <img
+                  src={post.data.featuredImage}
+                  alt={post.data.title}
+                  class="w-full max-w-[320px] mx-auto h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+            )}
+            {!post.data.featuredImage && (
+              <div class="h-48 bg-dark-background flex items-center justify-center">
+                <span class="text-primary font-display font-bold text-4xl uppercase">KRE</span>
+              </div>
+            )}
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="text-primary font-display font-bold uppercase text-xs tracking-widest">{post.data.displayDate}</span>
+                <span class="text-border">|</span>
+                <span class="text-muted-foreground text-xs">{post.data.readingTime}</span>
+              </div>
+              <h2 class="font-display font-bold uppercase text-foreground text-base leading-tight mb-3 group-hover:text-primary transition-colors duration-150">
+                {post.data.title}
+              </h2>
+              <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+                {post.data.shortSummary}
+              </p>
+              <div class="mt-4 flex items-center gap-2 text-primary font-display font-bold uppercase text-xs tracking-widest">
+                <span>Read Article</span>
+                <span>→</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+    </div>
+  </section>
+</BaseLayout>

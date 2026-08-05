@@ -1,0 +1,91 @@
+---
+import Container from '@/components/Container.astro';
+import { SITE } from '@/config/site';
+
+const partnerBadges = [
+  { src: "https://pagesmith-cdn.com/d22f750a/images/pali-logo-211-236.webp", alt: "PALI Logo" },
+  { src: "https://pagesmith-cdn.com/d22f750a/images/Alvernia_College_Logo-194.webp", alt: "Alvernia College" },
+  { src: "https://pagesmith-cdn.com/d22f750a/images/1200px-National_Eagle_Scout_Association_-77.webp", alt: "Eagle Scout Association" },
+  { src: "https://pagesmith-cdn.com/d22f750a/images/Contract_Holder-ReverseStarMark-2020-194.webp", alt: "Contract Holder" },
+  { src: "https://pagesmith-cdn.com/d22f750a/images/63861c_73787725be8f4fa5b6f02908b0c8a9b2~mv2-138.webp", alt: "Security Guard Badge" }
+];
+---
+
+<footer class="bg-dark-background text-dark-foreground pt-20 pb-12 border-t border-dark-border" data-ps="src/components/Footer.astro:ikmf33">
+  <Container>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16" data-ps="src/components/Footer.astro:p4vf88">
+      <!-- Company Info -->
+      <div class="lg:col-span-4" data-ps="src/components/Footer.astro:p4vf89">
+        <div class="flex items-center gap-3 mb-6" data-ps="src/components/Footer.astro:p4vf82">
+          <div class="bg-white p-2 h-14 w-14 flex items-center justify-center" data-ps="src/components/Footer.astro:p4vf83">
+            <img src="https://pagesmith-cdn.com/d22f750a/images/63861c_97b2523e9d3544fc96f59413cc0cd3cb~mv2-131.webp" alt="KRE Security" class="h-full w-auto object-contain" data-ps="src/components/Footer.astro:4nflyf" />
+          </div>
+          <div class="flex flex-col" data-ps="src/components/Footer.astro:p4vf84">
+            <h2 class="text-xl font-bold font-display uppercase leading-none" data-ps="src/components/Footer.astro:f0091f">KRE SECURITY</h2>
+            <span class="text-xs font-bold font-display text-primary mt-1" data-ps="src/components/Footer.astro:abywzq">LLC.</span>
+          </div>
+        </div>
+        <p class="text-dark-muted-foreground text-sm leading-relaxed max-w-sm" data-ps="src/components/Footer.astro:euol">
+          {SITE.description}
+        </p>
+        <div class="mt-8 flex gap-4" data-ps="src/components/Footer.astro:p4vf85">
+          <a href={SITE.socials.facebook} class="text-dark-foreground hover:text-primary transition-colors" aria-label="Facebook Main" data-ps="src/components/Footer.astro:7gqbzk">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+          </a>
+          <a href={SITE.socials.facebook_investigations} class="text-dark-foreground hover:text-primary transition-colors" aria-label="Facebook Investigations" data-ps="src/components/Footer.astro:7gqbzl">
+             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Units -->
+      <div class="lg:col-span-5 grid grid-cols-1 md:grid-cols-2 gap-8" data-ps="src/components/Footer.astro:p4vf8a">
+        <div data-ps="src/components/Footer.astro:p4vf86">
+          <h2 class="text-sm font-bold font-display text-primary uppercase tracking-widest mb-6" data-ps="src/components/Footer.astro:f0091e">Main Office</h2>
+          <div class="text-sm text-dark-muted-foreground space-y-2" data-ps="src/components/Footer.astro:p4vf87">
+            <p data-ps="src/components/Footer.astro:csfal">16600 Pottsville Pike</p>
+            <p data-ps="src/components/Footer.astro:csfam">Hamburg, PA 19526</p>
+            <p class="pt-2" data-ps="src/components/Footer.astro:csfan">Main: <a href="tel:610-562-0971" class="text-dark-foreground hover:text-primary no-underline font-bold" data-ps="src/components/Footer.astro:7gqbzm">610-562-0971</a></p>
+            <p data-ps="src/components/Footer.astro:euor">Lancaster/Lebanon: <a href="tel:717-450-7632" class="text-dark-foreground hover:text-primary no-underline font-bold" data-ps="src/components/Footer.astro:8o2pi">717-450-7632</a></p>
+            <p data-ps="src/components/Footer.astro:euos">Schuylkill: <a href="tel:570-399-1010" class="text-dark-foreground hover:text-primary no-underline font-bold" data-ps="src/components/Footer.astro:8o2pj">570-399-1010</a></p>
+            <p data-ps="src/components/Footer.astro:euot">Harrisburg: <a href="tel:717-480-2961" class="text-dark-foreground hover:text-primary no-underline font-bold" data-ps="src/components/Footer.astro:8o2pk">717-480-2961</a></p>
+          </div>
+        </div>
+        <div data-ps="src/components/Footer.astro:p4vf88">
+          <h2 class="text-sm font-bold font-display text-primary uppercase tracking-widest mb-6" data-ps="src/components/Footer.astro:w7klor">Quick Links</h2>
+          <ul class="list-none p-0 m-0 grid grid-cols-2 gap-x-4 gap-y-2">
+            <li data-ps="src/components/Footer.astro:wyji5p"><a href="/" class="text-sm text-dark-muted-foreground no-underline hover:text-dark-foreground transition-colors" data-ps="src/components/Footer.astro:7gqbzn">Home</a></li>
+            <li data-ps="src/components/Footer.astro:wyji5q"><a href="/security-services-pa" class="text-sm text-dark-muted-foreground no-underline hover:text-dark-foreground transition-colors" data-ps="src/components/Footer.astro:7gqbzo">About</a></li>
+            <li data-ps="src/components/Footer.astro:wyji5r"><a href="/#services" class="text-sm text-dark-muted-foreground no-underline hover:text-dark-foreground transition-colors" data-ps="src/components/Footer.astro:7gqbzp">Services</a></li>
+            <li data-ps="src/components/Footer.astro:wyji5s"><a href="/employment" class="text-sm text-dark-muted-foreground no-underline hover:text-dark-foreground transition-colors" data-ps="src/components/Footer.astro:7gqbzq">Employment</a></li>
+            <li data-ps="src/components/Footer.astro:wyji6e"><a href="/contact" class="text-sm text-dark-muted-foreground no-underline hover:text-dark-foreground transition-colors" data-ps="src/components/Footer.astro:7gqbzr">Contact</a></li>
+            <li data-ps="src/components/Footer.astro:wyji6f"><a href="/blog" class="text-sm text-dark-muted-foreground no-underline hover:text-dark-foreground transition-colors" data-ps="src/components/Footer.astro:7gqc0d">Blog</a></li>
+            <li data-ps="src/components/Footer.astro:wyji6g"><a href="/sitemap" class="text-sm text-dark-muted-foreground no-underline hover:text-dark-foreground transition-colors" data-ps="src/components/Footer.astro:7gqc0e">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Support Badges -->
+      <div class="lg:col-span-3" data-ps="src/components/Footer.astro:p4vf89">
+        <h2 class="text-sm font-bold font-display text-primary uppercase tracking-widest mb-6" data-ps="src/components/Footer.astro:w7klos">Proud Supporter</h2>
+        <div class="grid grid-cols-3 gap-4" data-ps="src/components/Footer.astro:p4vf8a">
+          {partnerBadges.map(badge => (
+            <div class="bg-white/5 p-2 flex items-center justify-center border border-dark-border" data-ps="src/components/Footer.astro:p4vf8b">
+              <img src={badge.src} alt={badge.alt} class="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all" data-ps="src/components/Footer.astro:4nflye" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-dark-border pt-12 flex flex-col md:flex-row justify-between items-center gap-6" data-ps="src/components/Footer.astro:p4vf8b">
+      <p class="text-xs text-dark-muted-foreground uppercase tracking-wider" data-ps="src/components/Footer.astro:euom">
+        &copy; {new Date().getFullYear()} {SITE.name}. License No. 84. Veteran Supported Firm.
+      </p>
+      <p class="text-xs text-dark-muted-foreground uppercase tracking-wider" data-ps="src/components/Footer.astro:csfao">
+        Serving 22+ Counties in Pennsylvania
+      </p>
+    </div>
+  </Container>
+</footer>

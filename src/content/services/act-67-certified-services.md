@@ -1,0 +1,179 @@
+---
+title: "ACT 67 Certified Services"
+heroBadge: "[ Authorized Vendor: ACT 67 Compliance ]"
+heroTitle: "KRE Security: Authorized Vendor for ACT 67 Compliance"
+heroTagline: "Ensuring School Safety with Certified Expertise"
+heroSubtext: "KRE Security is proud to announce that we are now an approved and authorized vendor for ACT 67 compliance. This designation allows us to provide top-tier security services tailored to meet the stringent requirements of Pennsylvania's school safety laws."
+seoTitle: "ACT 67 Certified Services | Eastern Pennsylvania | KRE Security"
+seoMetaDescription: "KRE Security LLC. is a local, well trusted and respected security company who has been providing a vast portion of security and protection needs to schools. We offer professional armed and unarmed security guards based on your needs and preferences."
+mainImage: "https://pagesmith-cdn.com/d22f750a/images/63861c_73787725be8f4fa5b6f02908b0c8a9b2~mv2-82.webp"
+draft: false
+---
+<section class="bg-surface py-20" data-ps="act-67-certified-services/Act67Content.astro">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- What is ACT 67 -->
+<div class="grid lg:grid-cols-2 gap-16 mb-20 items-start">
+<div class="reveal">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-3">
+[ Pennsylvania Law ]
+</p>
+<h2
+class="font-display font-bold uppercase tracking-tight text-foreground mb-6"
+style="font-size: var(--text-h2); line-height: 1.1;"
+>
+What is ACT 67?
+</h2>
+<p class="text-muted-foreground text-base leading-relaxed mb-6">
+ACT 67 of 2019 is a Pennsylvania law that enhances school safety by establishing clear training and credentialing requirements for school security personnel, including:
+</p>
+<ul class="space-y-4">
+<li class="flex gap-3 items-start">
+<span class="mt-1 w-2 h-2 bg-primary flex-shrink-0"></span>
+<div>
+<span class="font-display font-bold text-foreground text-sm uppercase tracking-wide">School Police Officers (SPOs):</span>
+<span class="text-muted-foreground text-sm ml-1">Law enforcement officers employed or contracted by schools.</span>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1 w-2 h-2 bg-primary flex-shrink-0"></span>
+<div>
+<span class="font-display font-bold text-foreground text-sm uppercase tracking-wide">School Resource Officers (SROs):</span>
+<span class="text-muted-foreground text-sm ml-1">Officers stationed in schools through agreements with law enforcement agencies.</span>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1 w-2 h-2 bg-primary flex-shrink-0"></span>
+<div>
+<span class="font-display font-bold text-foreground text-sm uppercase tracking-wide">School Security Guards:</span>
+<span class="text-muted-foreground text-sm ml-1">Personnel responsible for routine safety and security duties in schools.</span>
+</div>
+</li>
+</ul>
+<p class="text-muted-foreground text-sm leading-relaxed mt-6">
+ACT 67 ensures that only qualified and trained individuals are authorized to carry firearms and perform security duties in educational settings.
+</p>
+</div>
+<!-- Images grid -->
+<div class="grid grid-cols-2 gap-4 reveal-right">
+<div class="tactical-frame overflow-hidden">
+<img
+src="https://pagesmith-cdn.com/d22f750a/images/IMG_2754-320.webp"
+alt="ACT 67 training"
+class="w-full h-40 object-cover"
+loading="lazy"
+/>
+</div>
+<div class="tactical-frame overflow-hidden">
+<img
+src="https://pagesmith-cdn.com/d22f750a/images/Training-course-320.webp"
+alt="Training course"
+class="w-full h-40 object-cover"
+loading="lazy"
+/>
+</div>
+<div class="tactical-frame overflow-hidden col-span-2">
+<img
+src="https://pagesmith-cdn.com/d22f750a/images/Modern-School-Building-320.webp"
+alt="Modern School Building"
+class="w-full h-40 object-cover"
+loading="lazy"
+/>
+</div>
+</div>
+</div>
+<!-- Our ACT 67 Services -->
+<div class="mb-20">
+<div class="text-center mb-12 reveal">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-3">
+[ Authorized Vendor ]
+</p>
+<h2
+class="font-display font-bold uppercase tracking-tight text-foreground mb-4"
+style="font-size: var(--text-h2); line-height: 1.1;"
+>
+Our ACT 67 Services
+</h2>
+<p class="text-muted-foreground text-base max-w-2xl mx-auto">
+As an authorized vendor, KRE Security offers comprehensive services to help schools comply with ACT 67 requirements.
+</p>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="tactical-frame bg-background p-6 reveal reveal-delay-1">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-2">
+[ Training ]
+</p>
+<h3 class="font-display font-bold uppercase text-foreground text-lg mb-3">
+Certified Training Programs
+</h3>
+<p class="text-muted-foreground text-sm leading-relaxed">
+We provide the Basic School Resource Officer Course of Instruction approved by the National Association of School Resource Officers (NASRO) or equivalent courses.
+</p>
+</div>
+<div class="tactical-frame bg-background p-6 reveal reveal-delay-2">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-2">
+[ Compliance ]
+</p>
+<h3 class="font-display font-bold uppercase text-foreground text-lg mb-3">
+Credential Verification
+</h3>
+<p class="text-muted-foreground text-sm leading-relaxed">
+Assistance with background checks and certifications under the Lethal Weapons Training Act (Act 235).
+</p>
+</div>
+<div class="tactical-frame bg-background p-6 reveal reveal-delay-3">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-2">
+[ Tailored ]
+</p>
+<h3 class="font-display font-bold uppercase text-foreground text-lg mb-3">
+Customized Security Solutions
+</h3>
+<p class="text-muted-foreground text-sm leading-relaxed">
+Tailored security plans to meet the unique needs of your school or district.
+</p>
+</div>
+<div class="tactical-frame bg-background p-6 reveal reveal-delay-4">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-2">
+[ Continuous ]
+</p>
+<h3 class="font-display font-bold uppercase text-foreground text-lg mb-3">
+Ongoing Support
+</h3>
+<p class="text-muted-foreground text-sm leading-relaxed">
+Annual in-service training and compliance updates to ensure your security personnel remain certified and prepared.
+</p>
+</div>
+</div>
+</div>
+<!-- Classroom image + CTA -->
+<div class="grid lg:grid-cols-2 gap-12 items-center reveal">
+<div class="tactical-frame overflow-hidden">
+<img
+src="https://pagesmith-cdn.com/d22f750a/images/Classroom-768.webp"
+alt="Classroom"
+class="w-full max-w-[768px] h-auto object-cover"
+loading="lazy"
+/>
+</div>
+<div>
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-4">
+[ Get Started Today ]
+</p>
+<h2
+class="font-display font-bold uppercase tracking-tight text-foreground mb-4"
+style="font-size: var(--text-h2); line-height: 1.1;"
+>
+Ensure Your School is ACT 67 Compliant
+</h2>
+<p class="text-muted-foreground text-base leading-relaxed mb-8">
+Contact us to learn more about our ACT 67 services or to schedule a consultation. KRE Security is your trusted partner for certified school safety.
+</p>
+<a
+href="/contact"
+class="inline-block bg-primary text-primary-foreground font-display font-bold uppercase tracking-widest text-sm px-8 py-4 border-2 border-primary hover:bg-primary-hover transition-colors duration-150"
+>
+Contact Us Today to Get Started
+</a>
+</div>
+</div>
+</div>
+</section>

@@ -1,0 +1,141 @@
+---
+title: "Armed Money Escorts"
+heroBadge: "[ Dispatch Status: Active — 24/7/365 ]"
+heroTitle: "Armed Money Escorts"
+heroSubtext: "Through vigilance and attention to detail, KRE Security has performed countless escorts without incident over the course of our last 35 years in business. Protection and safety of our customers is our top priority."
+seoTitle: "Armed Money Escorts | Eastern Pennsylvania | KRE Security"
+seoMetaDescription: "There are a number of standard tasks that a fire watch guard patrol is required to accomplish while on duty. This meets local codes enforcement and provides a extra layer when commercial systems are not in operation."
+mainImage: "https://pagesmith-cdn.com/d22f750a/images/Screenshot-2023-11-09-at-1_25_26-PM-320.webp"
+draft: false
+---
+<section class="bg-surface py-20" data-ps="armed-money-escorts/ArmedMoneyEscortsContent.astro">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Benefits -->
+<div class="grid lg:grid-cols-2 gap-16 mb-20 items-start">
+<div class="reveal">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-3">
+[ Service Benefits ]
+</p>
+<h2
+class="font-display font-bold uppercase tracking-tight text-foreground mb-6"
+style="font-size: var(--text-h2); line-height: 1.1;"
+>
+Money / Vending Escort Service Benefits
+</h2>
+<ul class="space-y-3">
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-2 h-2 bg-primary flex-shrink-0"></span>
+<span class="text-muted-foreground text-sm leading-relaxed">Save time and money</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-2 h-2 bg-primary flex-shrink-0"></span>
+<span class="text-muted-foreground text-sm leading-relaxed">Carrier support with active guard during transports</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-2 h-2 bg-primary flex-shrink-0"></span>
+<span class="text-muted-foreground text-sm leading-relaxed">Lower the risk of theft and mishandling</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-2 h-2 bg-primary flex-shrink-0"></span>
+<span class="text-muted-foreground text-sm leading-relaxed">Allows guards to be vigilant and provide solutions to customer escorts</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-2 h-2 bg-primary flex-shrink-0"></span>
+<span class="text-muted-foreground text-sm leading-relaxed">Free up resources for more productive activities</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-2 h-2 bg-primary flex-shrink-0"></span>
+<span class="text-muted-foreground text-sm leading-relaxed">Increase operational efficiency</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-2 h-2 bg-primary flex-shrink-0"></span>
+<span class="text-muted-foreground text-sm leading-relaxed">Gain greater visibility into your operations</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-2 h-2 bg-primary flex-shrink-0"></span>
+<span class="text-muted-foreground text-sm leading-relaxed">Improve security for your employees and customers</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="mt-1.5 w-2 h-2 bg-primary flex-shrink-0"></span>
+<span class="text-muted-foreground text-sm leading-relaxed">Develop planning that does not expose the customer to routine operations to leave them vulnerable</span>
+</li>
+</ul>
+</div>
+<!-- Service cards -->
+<div class="space-y-6">
+<div class="tactical-frame bg-background p-6 reveal-right">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-2">
+[ ATM Division ]
+</p>
+<h3 class="font-display font-bold uppercase text-foreground text-lg mb-3">ATM Services</h3>
+<p class="text-muted-foreground text-sm leading-relaxed">
+Available to ATM repair technicians on short notice at any time, KRE Security ATM services help reduce risk. Our ATM armed escorts are easily identifiable to deter criminals as an armed and visual deterrent. Hiring KRE Security as your armed escort provides a secure environment for technicians to safely service equipment while getting the ATM machine up and running as quickly as possible.
+</p>
+</div>
+<div class="tactical-frame bg-background p-6 reveal-right reveal-delay-1">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-2">
+[ Banking Division ]
+</p>
+<h3 class="font-display font-bold uppercase text-foreground text-lg mb-3">Bank Deposits</h3>
+<p class="text-muted-foreground text-sm leading-relaxed">
+KRE Security Team can handle all types of bank deposits with armed or unarmed couriers. Never switching hands, going to a sorting center or being held for a bulk deposit with other companies — we ensure same day cash deposits that go directly from your organization to your bank. For banking clients, we provide escorts for employees doing cash replenishment, alarm response, and permanent or temporary security guard services.
+</p>
+</div>
+</div>
+</div>
+<!-- Transporting Valuables -->
+<div class="bg-dark-background p-8 lg:p-12 tactical-frame mb-16 reveal">
+<div class="grid lg:grid-cols-2 gap-10 items-center">
+<div>
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-3">
+[ High-Value Assets ]
+</p>
+<h2
+class="font-display font-bold uppercase tracking-tight text-dark-foreground mb-4"
+style="font-size: var(--text-h2); line-height: 1.1;"
+>
+Transporting Valuables
+</h2>
+<p class="text-dark-muted-foreground text-sm leading-relaxed mb-4">
+Whether a regular component of your business, or a unique delivery, if you need professional security when handling valuables, KRE Security has you covered no matter the time or day of the week.
+</p>
+<p class="text-dark-muted-foreground text-sm leading-relaxed">
+This specialized service is provided by our network of active and retired police officers, military, and public safety members who are personnel trained in tactics specific to high-level asset protection. The primary directive for our armed escorts is the safety of you or your representatives' assets.
+</p>
+</div>
+<div class="space-y-4">
+<div class="border border-dark-border p-4">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-1">Operations</p>
+<p class="text-dark-foreground text-sm">24/7 Scheduling and on-call manager support system</p>
+</div>
+<div class="border border-dark-border p-4">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-1">Monitoring</p>
+<p class="text-dark-foreground text-sm">Constant monitoring, communication and coordination of service while your assets are in the field</p>
+</div>
+<div class="border border-dark-border p-4">
+<p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-1">Personnel</p>
+<p class="text-dark-foreground text-sm">Active and retired police officers, military, and public safety members</p>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA -->
+<div class="text-center reveal">
+<h2
+class="font-display font-bold uppercase tracking-tight text-foreground mb-4"
+style="font-size: var(--text-h2); line-height: 1.1;"
+>
+Call for a Quote Today
+</h2>
+<p class="text-muted-foreground text-base mb-8 max-w-xl mx-auto">
+KRE maintains a 24/7 scheduling and on-call manager support system. Availability of our team is critical to supporting our customers' 24/7 operations.
+</p>
+<a
+href="/contact"
+class="inline-block bg-primary text-primary-foreground font-display font-bold uppercase tracking-widest text-sm px-10 py-4 border-2 border-primary hover:bg-primary-hover transition-colors duration-150"
+>
+Contact Us Today to Get Started
+</a>
+</div>
+</div>
+</section>

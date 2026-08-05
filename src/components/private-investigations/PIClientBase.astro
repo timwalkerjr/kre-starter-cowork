@@ -1,0 +1,50 @@
+---
+---
+<section class="bg-surface" id="pi-clients">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid lg:grid-cols-2 gap-12">
+      <div>
+        <p class="font-display text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">[ Client Base ]</p>
+        <h2 class="font-display font-bold text-h3 text-foreground uppercase tracking-tight leading-tight mb-6">
+          Diverse Clientele, Tailored Investigations
+        </h2>
+        <p class="font-sans text-foreground leading-relaxed mb-6">
+          Our firm specializes and handles numerous types of investigations with various scenarios. All casework is performed based on each client's needs.
+        </p>
+        <div class="grid grid-cols-2 gap-3 mb-8">
+          {[
+            'Private Citizens',
+            'Attorneys',
+            'Processing Services',
+            'Corporate Investigation',
+          ].map((client) => (
+            <div class="flex items-center gap-3 p-3 bg-background border border-border">
+              <span class="w-2 h-2 bg-primary flex-shrink-0"></span>
+              <span class="font-sans text-sm font-bold text-foreground uppercase tracking-wide">{client}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="tactical-frame bg-background p-8">
+        <p class="font-display text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4">[ Investigation Gallery ]</p>
+        <div class="grid grid-cols-3 gap-3">
+          {[
+            { src: 'https://pagesmith-cdn.com/d22f750a/images/39725c_86c608ccdb0d4da3b8fcae29c1d66966~mv2-249.webp', alt: 'Assets investigations eastern PA' },
+            { src: 'https://pagesmith-cdn.com/d22f750a/images/39725c_cb3f85e968114b56ae9df1c5c7d2070b~mv2-249.webp', alt: 'Accident investigation eastern PA' },
+            { src: 'https://pagesmith-cdn.com/d22f750a/images/39725c_1e2fcb7bd06c47daa05d6a0123c21dba~mv2-249.webp', alt: 'Arson investigation eastern PA' },
+            { src: 'https://pagesmith-cdn.com/d22f750a/images/39725c_5a11581892684bb2b92d20d8f345a562~mv2-249.webp', alt: 'Aerial photography eastern PA' },
+            { src: 'https://pagesmith-cdn.com/d22f750a/images/39725c_4fad465f794a469fbba6908140d4d1dc~mv2-249.webp', alt: 'Security for banks in eastern PA' },
+            { src: 'https://pagesmith-cdn.com/d22f750a/images/39725c_a3ed82b6ac544fcfa158aa82cdaf287e~mv2-249.webp', alt: 'Private investigator Berks County PA' },
+            { src: 'https://pagesmith-cdn.com/d22f750a/images/39725c_763698ed78cd45928029cc4654c0c7e5~mv2-249.webp', alt: 'Child abuse investigations reading' },
+            { src: 'https://pagesmith-cdn.com/d22f750a/images/39725c_467643f3786a417fa8f521861f6674f0~mv2-249.webp', alt: 'Custody support near reading PA' },
+            { src: 'https://pagesmith-cdn.com/d22f750a/images/39725c_ca4dc36d09fd4b40a790fbff199405ed~mv2-249.webp', alt: 'Civil litigation support Montgomery' },
+          ].map((img) => (
+            <div class="overflow-hidden aspect-square">
+              <img src={img.src} alt={img.alt} class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -39,9 +39,6 @@ const noIndexPaths = collectNoIndexPaths();
 
 // https://astro.build/config
 export default defineConfig({
-  redirects: {
-    '/copy-of-in-home-security-1': '/testimonials',
-  },
   compressHTML: true,
   output: 'static',
   trailingSlash: 'always',
@@ -82,7 +79,6 @@ export default defineConfig({
       theme: 'github-dark',
     },
     remarkPlugins: [remarkGfm, remarkToc],
-    smartypants: false,
   },
   build: {
     inlineStylesheets: 'always',

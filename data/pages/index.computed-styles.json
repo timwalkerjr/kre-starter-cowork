@@ -1,0 +1,454 @@
+{
+  "viewportWidth": 1920,
+  "pageBackground": null,
+  "isElementor": false,
+  "sectionThemes": [
+    {
+      "background": "rgb(255, 255, 255)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(242, 214, 77)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "https://static.wixstatic.com/media/43b45bfaba6b49f488fd3947d68710b2.png/v1/crop/x_0,y_0,w_200,h_200,q_85,enc_auto/43b45bfaba6b49f488fd3947d68710b2.png",
+      "isBackgroundPhoto": true,
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "https://static.wixstatic.com/media/43b45bfaba6b49f488fd3947d68710b2.png/v1/crop/x_0,y_0,w_200,h_200,q_85,enc_auto/43b45bfaba6b49f488fd3947d68710b2.png",
+      "isBackgroundPhoto": true,
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(36, 35, 35)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "backgroundImage": "https://static.wixstatic.com/media/43b45bfaba6b49f488fd3947d68710b2.png/v1/crop/x_0,y_0,w_200,h_200,q_85,enc_auto/43b45bfaba6b49f488fd3947d68710b2.png",
+      "isBackgroundPhoto": true,
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(36, 35, 35)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(36, 35, 35)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(0, 0, 0)",
+      "backgroundImage": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAEsCAYAAAACUNnVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2",
+      "isBackgroundPhoto": true,
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    }
+  ],
+  "globalTypography": {
+    "headingFont": null,
+    "bodyFont": null,
+    "scale": {}
+  },
+  "navigation": {
+    "isFullWidth": true,
+    "width": "1905px",
+    "backgroundColor": "rgb(242, 214, 77)",
+    "position": "sticky",
+    "boxShadow": "rgba(0, 0, 0, 0.7) 0px 2px 5px 0px",
+    "logo": {
+      "width": "131px",
+      "height": "149px",
+      "position": "inside-nav",
+      "hasBadge": false,
+      "src": "https://static.wixstatic.com/media/63861c_97b2523e9d3544fc96f59413cc0cd3cb~mv2.png/v1/fill/w_131,h_157,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/63861c_97b2523e9d3544fc96f59413cc0cd3cb~mv2.png"
+    },
+    "icons": [
+      {
+        "type": "language",
+        "width": 35,
+        "height": 35
+      }
+    ],
+    "links": [
+      {
+        "text": "HOME",
+        "fontSize": "16px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)"
+      },
+      {
+        "text": "ABOUT US",
+        "fontSize": "16px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)"
+      },
+      {
+        "text": "FAQs",
+        "fontSize": "16px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)"
+      },
+      {
+        "text": "EMPLOYMENT",
+        "fontSize": "16px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "hasDropdown": true
+      },
+      {
+        "text": "NOW HIRING!",
+        "fontSize": "20px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(96, 94, 94)"
+      },
+      {
+        "text": "EASTERN PA EDUCATORS",
+        "fontSize": "16px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)"
+      },
+      {
+        "text": "ACT 67 TRAINING",
+        "fontSize": "15px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "isButton": true,
+        "buttonStyle": {
+          "backgroundColor": "rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "FIRST AID TRAINING SERVICES",
+        "fontSize": "15px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)",
+        "isButton": true,
+        "buttonStyle": {
+          "backgroundColor": "rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "610-562-0971",
+        "fontSize": "22px",
+        "fontFamily": "avenir-lt-w01_35-light1475496",
+        "fontWeight": "400",
+        "color": "rgb(37, 37, 37)"
+      },
+      {
+        "text": "Under New Ownership and Manage",
+        "fontSize": "12px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(96, 94, 94)"
+      },
+      {
+        "text": "CONTACT",
+        "fontSize": "16px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)"
+      },
+      {
+        "text": "BLOG",
+        "fontSize": "16px",
+        "fontFamily": "avenir-lt-w01_85-heavy1475544",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 238)"
+      }
+    ],
+    "linkLayout": {
+      "paddingX": "0px 0px",
+      "pitchPx": 290,
+      "distribution": "center"
+    }
+  },
+  "sliders": [],
+  "buttons": [],
+  "videos": [],
+  "footer": {
+    "background": "rgba(0, 0, 0, 0)",
+    "textColor": "rgb(0, 0, 0)",
+    "columns": 1
+  },
+  "socialLinks": [
+    {
+      "platform": "facebook",
+      "href": "https://www.facebook.com/KRE-Security-LLC-105764734683407",
+      "location": "nav"
+    },
+    {
+      "platform": "facebook",
+      "href": "https://www.facebook.com/KREsecinvestigations/",
+      "location": "footer"
+    }
+  ],
+  "hoverStyles": {
+    ".StylableButton2545352419__root:not():not([disabled]).StylableButton2545352419--hasBackgroundColor": {
+      "backgroundColor": "var(--corvid-background-color)"
+    },
+    ".StylableButton2545352419__root:not([disabled]).StylableButton2545352419--hasHoverBackgroundColor": {
+      "backgroundColor": "var(--corvid-hover-background-color)"
+    },
+    ".StylableButton2545352419__root:not()[disabled].StylableButton2545352419--hasDisabledBackgroundColor": {
+      "backgroundColor": "var(--corvid-disabled-background-color)"
+    },
+    ".StylableButton2545352419__root:not():not([disabled]).StylableButton2545352419--hasBorderColor": {
+      "borderColor": "var(--corvid-border-color)"
+    },
+    ".StylableButton2545352419__root:not([disabled]).StylableButton2545352419--hasHoverBorderColor": {
+      "borderColor": "var(--corvid-hover-border-color)"
+    },
+    ".StylableButton2545352419__root:not()[disabled].StylableButton2545352419--hasDisabledBorderColor": {
+      "borderColor": "var(--corvid-disabled-border-color)"
+    },
+    ".StylableButton2545352419__root:not():not([disabled]).StylableButton2545352419--hasColor, .StylableButton2545352419__root:not():not([disabled]).StylableButton2545352419--hasColor .StylableButton2545352419__label": {
+      "color": "var(--corvid-color)"
+    },
+    ".StylableButton2545352419__root:not([disabled]).StylableButton2545352419--hasHoverColor, .StylableButton2545352419__root:not([disabled]).StylableButton2545352419--hasHoverColor .StylableButton2545352419__label": {
+      "color": "var(--corvid-hover-color)"
+    },
+    ".StylableButton2545352419__root:not()[disabled].StylableButton2545352419--hasDisabledColor, .StylableButton2545352419__root:not()[disabled].StylableButton2545352419--hasDisabledColor .StylableButton2545352419__label": {
+      "color": "var(--corvid-disabled-color)"
+    },
+    "body:not(.device-mobile-optimized) .mu5PoX[aria-disabled=\"false\"] .twJknM, :host(:not(.device-mobile-optimized)) .mu5PoX[aria-disabled=\"false\"] .twJknM": {
+      "backgroundColor": "var(--corvid-hover-background-color,rgba(var(--bgh,var(--color_18,color_18)),var(--alpha-bgh,1)))",
+      "borderColor": "var(--corvid-hover-border-color,rgba(var(--brdh,var(--color_15,color_15)),var(--alpha-brdh,1)))"
+    },
+    "body:not(.device-mobile-optimized) .mu5PoX[aria-disabled=\"false\"] .OR4Nv8, :host(:not(.device-mobile-optimized)) .mu5PoX[aria-disabled=\"false\"] .OR4Nv8": {
+      "color": "var(--corvid-hover-color,rgb(var(--txth,var(--color_15,color_15))))"
+    },
+    "body:not(.device-mobile-optimized) .myoKiH[aria-disabled=\"false\"] .p2iqNU, :host(:not(.device-mobile-optimized)) .myoKiH[aria-disabled=\"false\"] .p2iqNU": {
+      "color": "var(--corvid-hover-color,rgb(var(--txth,var(--color_15,color_15))))"
+    },
+    ".jUeFYk[data-state~=\"over\"] .bNEwT7, .jUeFYk[data-state~=\"link\"] .bNEwT7": {
+      "color": "rgb(var(--txth,var(--color_14,color_14)))"
+    },
+    ".sCCUGm1, .skxLJE4": {
+      "color": "rgb(var(--wix-forms-formSubmitButtonColorHover,var(--wix-color-5)))"
+    },
+    "#SITE_CONTAINER.focus-ring-active .sigpKjl .smyXERm:focus-within, #SITE_CONTAINER.focus-ring-active .sigpKjl .sq3uuYJ:focus:not()": {
+      "boxShadow": "rgb(255, 255, 255) 0px 0px 0px 1px, rgb(17, 109, 255) 0px 0px 0px 3px"
+    },
+    ".smyXERm.o__6t2qui--focus, .smyXERm": {
+      "borderColor": "rgb(var(--wix-ui-tpa-text-field-hover-border-color,var(--wix-ui-tpa-text-field-main-border-color,var(--wix-color-5))))"
+    },
+    ".smyXERm.oYEaGDN---theme-3-box.o__6t2qui--focus, .smyXERm.oYEaGDN---theme-3-box, .smyXERm.oYEaGDN---theme-4-line.o__6t2qui--focus, .smyXERm.oYEaGDN---theme-4-line": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-text-field-hover-background-color-rgb,var(--wix-ui-tpa-text-field-main-background-color-rgb,transparent)),calc(var(--wix-ui-tpa-text-field-hover-background-color-opacity, var(--wix-ui-tpa-text-field-main-background-color-opacity, 1))*var(--wix-ui-tpa-text-field-hover-background-opacity, 1)))"
+    },
+    ".sigpKjl.oYEaGDN--success .smyXERm.o__6t2qui--focus, .sigpKjl.oYEaGDN--success .smyXERm": {
+      "borderColor": "rgb(0, 130, 80)"
+    },
+    ".sigpKjl.oYEaGDN--error:not(.oYEaGDN--newErrorMessage) .smyXERm.o__6t2qui--focus, .sigpKjl.oYEaGDN--error:not(.oYEaGDN--newErrorMessage) .smyXERm": {
+      "borderColor": "rgb(var(--wix-ui-tpa-text-field-main-error-border-color,223,49,49))"
+    },
+    ".smyXERm.o__6t2qui--focus .sjImZoO, .smyXERm .sjImZoO": {
+      "color": "rgb(var(--wix-ui-tpa-text-field-hover-text-color,var(--wix-ui-tpa-text-field-main-text-color,var(--wst-paragraph-2-color-rgb,var(--wix-color-5)))))"
+    },
+    ".sigpKjl .sxYAMB9:focus, .sigpKjl .sxYAMB9": {
+      "backgroundColor": "transparent",
+      "opacity": "1"
+    },
+    ".svkvpiH.oTSGO_X---hoverEffect-4-zoom .sALFxTu": {
+      "transform": "scale(1) translate(-3.5%, -3.5%)"
+    },
+    ".sSMZABS.o__9L4TsV---priority-7-primary.o__1Y_w3J--focus:not(.o__9L4TsV---hoverStyle-9-underline), .sSMZABS.o__9L4TsV---priority-7-primary:active:not(.o__9L4TsV---hoverStyle-9-underline), .sSMZABS.o__9L4TsV---priority-7-primary:not(.o__9L4TsV---hoverStyle-9-underline)": {
+      "color": "rgb(var(--wix-ui-tpa-text-button-main-text-color-rgb,var(--wix-color-8)),calc(var(--wix-ui-tpa-text-button-main-text-color-opacity, 1)*.7))"
+    },
+    ".sSMZABS.o__9L4TsV---priority-9-secondary.o__1Y_w3J--focus:not(.o__9L4TsV---hoverStyle-9-underline), .sSMZABS.o__9L4TsV---priority-9-secondary:active:not(.o__9L4TsV---hoverStyle-9-underline), .sSMZABS.o__9L4TsV---priority-9-secondary:not(.o__9L4TsV---hoverStyle-9-underline)": {
+      "color": "rgb(var(--wix-ui-tpa-text-button-main-text-color-rgb,var(--wix-color-5)),calc(var(--wix-ui-tpa-text-button-main-text-color-opacity, 1)*.7))"
+    },
+    ".sSMZABS.o__9L4TsV---priority-4-link.o__1Y_w3J--focus:not(.o__9L4TsV---hoverStyle-9-underline), .sSMZABS.o__9L4TsV---priority-4-link:active:not(.o__9L4TsV---hoverStyle-9-underline), .sSMZABS.o__9L4TsV---priority-4-link:not(.o__9L4TsV---hoverStyle-9-underline)": {
+      "color": "rgb(var(--wix-ui-tpa-text-button-main-text-color-rgb,var(--wix-color-5)),calc(var(--wix-ui-tpa-text-button-main-text-color-opacity, 1)*.7))"
+    },
+    ".sSMZABS.o__9L4TsV---priority-11-primaryLink.o__1Y_w3J--focus:not(.o__9L4TsV---hoverStyle-9-underline), .sSMZABS.o__9L4TsV---priority-11-primaryLink:active:not(.o__9L4TsV---hoverStyle-9-underline), .sSMZABS.o__9L4TsV---priority-11-primaryLink:not(.o__9L4TsV---hoverStyle-9-underline)": {
+      "color": "rgb(var(--wix-ui-tpa-text-button-main-text-color-rgb,var(--wix-color-8)),calc(var(--wix-ui-tpa-text-button-main-text-color-opacity, 1)*.7))"
+    },
+    ".s__1NTrOu.o__1Y_w3J--focus, .s__1NTrOu": {
+      "opacity": "var(--wix-ui-tpa-icon-button-hover-opacity,.7)"
+    },
+    ".s__1NTrOu.o__0LZdzr--disabled": {
+      "opacity": "1"
+    },
+    ".sWHTiwe.ojChOw_---priority-5-basic:active.ojChOw_---hoverStyle-9-underline, .sWHTiwe.ojChOw_---priority-5-basic.ojChOw_---hoverStyle-9-underline, .sWHTiwe:active.ojChOw_---hoverStyle-9-underline, .sWHTiwe.ojChOw_---hoverStyle-9-underline": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-button-hover-background-color,var(--wix-ui-tpa-button-main-background-color,var(--wst-paragraph-2-color-rgb,var(--wix-color-5)))))",
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color,var(--wst-primary-background-color-rgb,var(--wix-color-1)))))"
+    },
+    ".sWHTiwe.ojChOw_---priority-5-basic:active:not(.ojChOw_---hoverStyle-9-underline), .sWHTiwe.ojChOw_---priority-5-basic:not(.ojChOw_---hoverStyle-9-underline), .sWHTiwe:active:not(.ojChOw_---hoverStyle-9-underline), .sWHTiwe:not(.ojChOw_---hoverStyle-9-underline)": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-button-hover-background-color,var(--wix-ui-tpa-button-main-background-color,var(--wst-paragraph-2-color-rgb,var(--wix-color-5),.7))))",
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color,var(--wst-primary-background-color-rgb,var(--wix-color-1),.7))))"
+    },
+    ".sWHTiwe.ojChOw_---priority-14-basicSecondary:active.ojChOw_---hoverStyle-9-underline, .sWHTiwe.ojChOw_---priority-14-basicSecondary.ojChOw_---hoverStyle-9-underline": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-button-hover-background-color,var(--wix-ui-tpa-button-main-background-color,var(--wst-primary-background-color-rgb,var(--wix-color-1)))))",
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color,var(--wst-paragraph-2-color-rgb,var(--wix-color-5)))))"
+    },
+    ".sWHTiwe.ojChOw_---priority-14-basicSecondary:active:not(.ojChOw_---hoverStyle-9-underline), .sWHTiwe.ojChOw_---priority-14-basicSecondary:not(.ojChOw_---hoverStyle-9-underline)": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-button-hover-background-color,var(--wix-color-1),0))",
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color-rgb,var(--wix-color-5)),calc(var(--wix-ui-tpa-button-main-text-color-opacity, 1) * .7)))"
+    },
+    ".sWHTiwe.ojChOw_---priority-7-primary:active.ojChOw_---hoverStyle-9-underline, .sWHTiwe.ojChOw_---priority-7-primary.ojChOw_---hoverStyle-9-underline": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-button-hover-background-color,var(--wix-ui-tpa-button-main-background-color,var(--wst-button-primary-background-color-rgb,var(--wix-color-38)))))",
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color,var(--wst-button-primary-color-rgb,var(--wix-color-40)))))"
+    },
+    ".sWHTiwe.ojChOw_---priority-7-primary:active:not(.ojChOw_---hoverStyle-9-underline), .sWHTiwe.ojChOw_---priority-7-primary:not(.ojChOw_---hoverStyle-9-underline)": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-button-hover-background-color,var(--wix-ui-tpa-button-main-background-color-rgb,var(--wst-button-primary-background-color-rgb,var(--wix-color-41))),calc(var(--wix-ui-tpa-button-main-background-color-opacity, 1) * .7)))",
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color-rgb,var(--wst-button-primary-color-rgb,var(--wix-color-43))),calc(var(--wix-ui-tpa-button-main-text-color-opacity, 1) * .7)))"
+    },
+    ".sWHTiwe.ojChOw_---priority-9-secondary:active.ojChOw_---hoverStyle-9-underline, .sWHTiwe.ojChOw_---priority-9-secondary.ojChOw_---hoverStyle-9-underline": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-button-hover-background-color,var(--wix-ui-tpa-button-main-background-color,var(--wst-button-secondary-background-color-rgb,var(--wix-color-47),0))))",
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color,var(--wst-button-secondary-color-rgb,var(--wix-color-49)))))"
+    },
+    ".sWHTiwe.ojChOw_---priority-9-secondary:active:not(.ojChOw_---hoverStyle-9-underline), .sWHTiwe.ojChOw_---priority-9-secondary:not(.ojChOw_---hoverStyle-9-underline)": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-button-hover-background-color,var(--wst-button-secondary-background-color-rgb,var(--wix-color-50),0)))",
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color-rgb,var(--wst-button-secondary-color-rgb,var(--wix-color-52))),calc(var(--wix-ui-tpa-button-main-text-color-opacity, 1) * .7)))"
+    },
+    ".sWHTiwe:not(.ojChOw_---hoverStyle-9-underline) .sbyYhb2 svg[fill=\"currentColor\"]": {
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color-rgb,var(--wix-color-1)),calc(var(--wix-ui-tpa-button-main-text-color-opacity, 1) * .7)))"
+    },
+    ".sWHTiwe.ojChOw_---priority-9-secondary:not(.ojChOw_---hoverStyle-9-underline) .sbyYhb2 svg[fill=\"currentColor\"]": {
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color-rgb,var(--wix-color-52)),calc(var(--wix-ui-tpa-button-main-text-color-opacity, 1) * .7)))"
+    },
+    ".sWHTiwe.ojChOw_---priority-14-basicSecondary:not(.ojChOw_---hoverStyle-9-underline) .sbyYhb2 svg[fill=\"currentColor\"]": {
+      "color": "rgb(var(--wix-ui-tpa-button-hover-text-color,var(--wix-ui-tpa-button-main-text-color-rgb,var(--wix-color-5)),calc(var(--wix-ui-tpa-button-main-text-color-opacity, 1) * .7)))"
+    },
+    ".snZ_6f6.snZ_6f6.snZ_6f6.snZ_6f6 input:-webkit-autofill:focus, .snZ_6f6.snZ_6f6.snZ_6f6.snZ_6f6 input:-webkit-autofill": {
+      "boxShadow": "0 0 0 1000px rgb(var(--wix-forms-formInputBackgroundColorHover-rgb,var(--wix-color-1)),calc(var(--wix-forms-formInputBackgroundColorHover-opacity, 1)*--wix-forms-formInputBackgroundColorHover-opacity)) inset"
+    },
+    ".Bnz53": {
+      "opacity": "0.7"
+    },
+    ".pf-Fj": {
+      "opacity": "0.7"
+    },
+    ".sk_ESYz, .sk_ESYz": {
+      "color": "var(--ricosviewer2135568863-wix-forms-formLinkColor,rgba(var(--wix-color-8),1))"
+    },
+    ".sUs3fhJ:active, .sUs3fhJ:focus, .sUs3fhJ:focus-within, .sUs3fhJ": {
+      "backgroundColor": "rgb(var(--wix-ui-tpa-text-area-hover-background-color-rgb,var(--default-background-color-rgb,transparent)),calc(var(--wix-ui-tpa-text-area-hover-background-color-opacity, var(--default-background-color-opacity, 1))*var(--wix-ui-tpa-text-area-hover-background-opacity, 1)))",
+      "borderColor": "rgb(var(--wix-ui-tpa-text-area-hover-border-color,var(--wix-ui-tpa-text-area-border-color,var(--wst-paragraph-2-color-rgb))))"
+    },
+    ".sUs3fhJ:active > textarea, .sUs3fhJ:focus-within > textarea, .sUs3fhJ:focus > textarea, .sUs3fhJ > textarea": {
+      "color": "rgb(var(--wix-ui-tpa-text-area-hover-text-color,var(--wix-ui-tpa-text-area-main-label-text-color,var(--wst-paragraph-2-color-rgb))))"
+    },
+    ".sG8zQE0:focus.ocZtaOx--error:not(.ocZtaOx--newErrorMessage) .sUs3fhJ, .sG8zQE0.ocZtaOx--error:not(.ocZtaOx--newErrorMessage) .sUs3fhJ": {
+      "borderColor": "rgb(var(--wix-ui-tpa-text-area-error-border-color,var(--wst-system-error-color-rgb,223,49,49)))"
+    },
+    ".sG8zQE0:focus.ocZtaOx--error.ocZtaOx--newErrorMessage .sUs3fhJ, .sG8zQE0.ocZtaOx--error.ocZtaOx--newErrorMessage .sUs3fhJ": {
+      "borderColor": "var(--wut-error-color,#df3131)"
+    },
+    ".sG8zQE0:focus.ocZtaOx--success .sUs3fhJ, .sG8zQE0.ocZtaOx--success .sUs3fhJ": {
+      "borderColor": "rgb(var(--wix-ui-tpa-text-area-success-border-color,var(--wst-system-success-color-rgb,0,130,80)))"
+    },
+    ".sG8zQE0.ocZtaOx--disabled .sUs3fhJ, .sG8zQE0.ocZtaOx--disabled .sUs3fhJ": {
+      "borderColor": "rgb(var(--wix-ui-tpa-text-area-disabled-border-color,var(--wst-system-disabled-color-rgb,var(--wix-color-29))))"
+    },
+    ".MNUFxS a, .MNUFxS a:focus, .MNUFxS button, .MNUFxS button:focus": {
+      "opacity": "0.7"
+    },
+    ".kCHabv": {
+      "color": "rgb(203, 211, 220)"
+    },
+    ".BfPLBO:checked + .kCHabv": {
+      "color": "rgb(76, 76, 76)"
+    },
+    ".BfPLBO:checked + .kCHabv, .BfPLBO:checked + .kCHabv:active, .BfPLBO:checked + .kCHabv:active": {
+      "color": "rgb(0, 0, 0)"
+    },
+    ".BfPLBO:disabled + .kCHabv, .BfPLBO:disabled + .kCHabv, .BfPLBO:disabled + .kCHabv:active, .BfPLBO:disabled + .kCHabv:active": {
+      "color": "rgba(22, 45, 61, 0.1)"
+    },
+    ".SiFffK .jlHQeS, .SiFffK .jlHQeS:focus, .SiFffK .cRIX5Z, .SiFffK .cRIX5Z:focus": {
+      "opacity": "0.7"
+    },
+    ".UlRnc, ._1rvIJ": {
+      "boxShadow": "rgb(17, 109, 255) 0px 0px 0px 1.5px"
+    },
+    ".-u061:not(.Pfo6p) .qZDI4, .hUEa4:not(.Pfo6p) .qZDI4": {
+      "opacity": "1"
+    }
+  },
+  "cssVariables": {},
+  "externalFonts": [
+    "font-face: avenir-lt-w01_35-light1475496",
+    "font-face: avenir-lt-w01_35-light1475496",
+    "font-face: avenir-lt-w01_85-heavy1475544",
+    "font-face: avenir-lt-w01_85-heavy1475544",
+    "font-face: brandon-grot-w01-light",
+    "font-face: brandon-grot-w01-light",
+    "font-face: caudex",
+    "font-face: caudex",
+    "font-face: caudex",
+    "font-face: caudex"
+  ]
+}

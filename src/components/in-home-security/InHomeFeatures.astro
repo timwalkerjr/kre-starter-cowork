@@ -1,0 +1,101 @@
+---
+const reasons = [
+  {
+    num: "01",
+    title: "Sense of Security",
+    body: "Even just the presence of a security system can make a business more effective and efficient by giving owners and employees peace of mind.",
+  },
+  {
+    num: "02",
+    title: "Prevention",
+    body: "A thief will think twice when a security system is present. It lets them know that you are serious about your security and will deter them from targeting you.",
+  },
+  {
+    num: "03",
+    title: "Customer Service",
+    body: "Not only does a sense of security put your employees at ease but also your customers — creating a safer, more welcoming environment.",
+  },
+  {
+    num: "04",
+    title: "Handling Crime",
+    body: "Having security measures in place will allow police to solve a crime quickly and get you back to business in no time.",
+  },
+  {
+    num: "05",
+    title: "Monitoring",
+    body: "Take this responsibility off your shoulders and leave your home or business security to a professional security system.",
+  },
+];
+
+const included = [
+  "Standard touch screen",
+  "Three door or window sensors",
+  "One pet proof motion detector",
+  "One four button key fob",
+];
+---
+<section id="in-home-features" class="py-16 lg:py-24" style="background-color: var(--color-dark-background);">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+
+      <!-- System Includes -->
+      <div class="reveal-left">
+        <div class="mb-3">
+          <span class="status-dot">[ System Specs ]</span>
+        </div>
+        <h2 class="font-display font-bold uppercase tracking-tight text-dark-foreground mb-4"
+            style="font-size: var(--text-h2); line-height: 1.1;">
+          What's Included
+        </h2>
+        <p class="text-dark-muted-foreground mb-6 leading-relaxed">
+          Our systems are homeowner/businessowner owned and have a small monthly or yearly service fee.
+        </p>
+        <ul class="space-y-3 mb-6">
+          {included.map((item) => (
+            <li class="flex items-center gap-3 border border-dark-border p-3" style="background-color: var(--color-secondary);">
+              <span class="w-2 h-2 flex-shrink-0 rounded-full" style="background-color: var(--color-primary);"></span>
+              <span class="text-dark-foreground text-sm font-sans">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <div class="border-l-2 pl-4" style="border-color: var(--color-primary);">
+          <p class="text-sm text-dark-muted-foreground leading-relaxed">
+            * Additional equipment such as wireless smoke or carbon monoxide detectors can be added at a small fee.
+          </p>
+        </div>
+        <p class="text-dark-muted-foreground text-sm mt-4 leading-relaxed">
+          You can control your system using a simple, easy-to-use application on your smartphone, tablet, and more.
+        </p>
+      </div>
+
+      <!-- 5 Reasons -->
+      <div class="reveal-right">
+        <div class="mb-3">
+          <span class="text-xs font-display font-bold uppercase tracking-widest" style="color: var(--color-primary);">
+            [ Why Install a System ]
+          </span>
+        </div>
+        <h2 class="font-display font-bold uppercase tracking-tight text-dark-foreground mb-6"
+            style="font-size: var(--text-h2); line-height: 1.1;">
+          5 Reasons to Install a Home Security System
+        </h2>
+        <div class="space-y-4">
+          {reasons.map((r) => (
+            <div class="flex gap-4 items-start border-b border-dark-border pb-4 last:border-b-0 last:pb-0">
+              <span class="font-display font-bold text-2xl flex-shrink-0" style="color: var(--color-primary);">
+                {r.num}
+              </span>
+              <div>
+                <h3 class="font-display font-bold uppercase tracking-wide text-dark-foreground text-sm mb-1">
+                  {r.title}
+                </h3>
+                <p class="text-sm leading-relaxed" style="color: var(--color-dark-muted-foreground);">{r.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

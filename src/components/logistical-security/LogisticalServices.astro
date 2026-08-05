@@ -1,0 +1,89 @@
+---
+const services = [
+  { label: "Inventory Control Assistance", desc: "Assisting in accurate management of all transportation container inventories." },
+  { label: "Fixed Guard Booth & GPS Tracking", desc: "Stationary guard posts combined with GPS vehicle and asset tracking." },
+  { label: "Docking Designation", desc: "Keeping accurate timing and coordinating proper dock assignments." },
+  { label: "Arrival & Departure Logging", desc: "Tracking and maintaining logs for the arrival and departure of vehicles, materials, and equipment." },
+  { label: "Shipping Inventory Management", desc: "Managing and verifying all shipping inventory against manifests." },
+  { label: "Full Truck Inspections", desc: "Checking driver name, documenting front and back license plates, and ensuring no unauthorized pallets or equipment leave the facility." },
+  { label: "Reefer Temperature Logging", desc: "For refrigerated trucks, inspecting and logging refrigeration temperatures." },
+  { label: "Cal/OSHA Audit Support", desc: "Assisting in fulfilling Cal/OSHA audit requirements with highly trained staff." },
+];
+
+const galleryImages = [
+  { src: "https://pagesmith-cdn.com/d22f750a/images/63861c_b40132039a454caca51a291d981bb653~mv2-320.webp", alt: "KRE Security logistics operations" },
+  { src: "https://pagesmith-cdn.com/d22f750a/images/63861c_2413aa10d3184636be68c163373f1337~mv2-320.webp", alt: "Transportation security monitoring" },
+  { src: "https://pagesmith-cdn.com/d22f750a/images/63861c_7f6517f50dca4fe8be7a405cccb9c373~mv2-320.webp", alt: "Logistical security guard" },
+  { src: "https://pagesmith-cdn.com/d22f750a/images/63861c_552b9b4f821e46da8b116aed877efd39~mv2-320.webp", alt: "Security checkpoint operations" },
+];
+---
+<section id="logistical-services" class="bg-background py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <!-- Intro -->
+    <div class="max-w-3xl mb-12 reveal">
+      <div class="mb-3">
+        <span class="text-xs font-display font-bold uppercase tracking-widest" style="color: var(--color-primary);">
+          [ Transportation Industry Specialists ]
+        </span>
+      </div>
+      <h2 class="font-display font-bold uppercase tracking-tight text-foreground mb-4"
+          style="font-size: var(--text-h2); line-height: 1.1;">
+        Our Logistical Security Services
+      </h2>
+      <p class="text-muted-foreground leading-relaxed">
+        Our very affordable security services relieve your personnel of select inventory and inspection duties while enhancing our ability to provide proper security and accountability of all transportation containers for our clients. Whether you manage a storage yard, loading dock or a rail yard, our management team will design post order duties to match your business's needs and assign guards that are well-qualified to accomplish them.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+      {services.map((svc, i) => (
+        <div
+          class={`border border-border p-5 reveal reveal-delay-${Math.min(i + 1, 5)}`}
+          style="background-color: var(--color-surface);"
+        >
+          <span class="w-2 h-2 rounded-full block mb-3" style="background-color: var(--color-primary);"></span>
+          <p class="font-display font-bold uppercase tracking-wide text-foreground text-sm mb-2">{svc.label}</p>
+          <p class="text-xs text-muted-foreground leading-relaxed">{svc.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="mb-10">
+      <p class="text-xs font-display font-bold uppercase tracking-widest mb-4" style="color: var(--color-primary);">
+        [ Operations Gallery ]
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 reveal">
+        {galleryImages.map((img) => (
+          <div class="tactical-frame overflow-hidden">
+            <img
+              src={img.src}
+              alt={img.alt}
+              width="320"
+              class="w-full max-w-[320px] h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- CTA Strip -->
+    <div class="border border-border p-6 flex flex-col sm:flex-row items-start sm:items-center gap-6 reveal"
+         style="background-color: var(--color-surface);">
+      <div class="flex-1">
+        <p class="font-display font-bold uppercase tracking-wide text-foreground mb-1">Serving the I-78 Corridor Since 1990</p>
+        <p class="text-sm text-muted-foreground">Affordable, professional logistical security for transportation companies across Eastern Pennsylvania.</p>
+      </div>
+      <a
+        href="/contact/"
+        class="inline-block border-2 font-display font-bold uppercase tracking-wider text-sm px-6 py-3 flex-shrink-0 transition-colors duration-150"
+        style="border-color: var(--color-secondary); background-color: var(--color-secondary); color: var(--color-secondary-foreground);"
+      >
+        Get Started
+      </a>
+    </div>
+  </div>
+</section>

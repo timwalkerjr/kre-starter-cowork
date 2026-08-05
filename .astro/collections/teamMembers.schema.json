@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "heroBadge": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtext": {
+      "type": "string"
+    },
+    "heroTagline": {
+      "type": "string"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "bioSummary": {
+      "type": "string"
+    },
+    "mainImage": {
+      "type": "string"
+    },
+    "credentials": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "twitterLink": {
+      "type": "string",
+      "format": "uri"
+    },
+    "facebookLink": {
+      "type": "string",
+      "format": "uri"
+    },
+    "linkedinLink": {
+      "type": "string",
+      "format": "uri"
+    },
+    "callToAction": {
+      "type": "string"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoMetaDescription": {
+      "type": "string"
+    },
+    "jsonLdSchema": {
+      "type": "string"
+    },
+    "airtableRecordId": {
+      "type": "string"
+    },
+    "draft": {
+      "default": false,
+      "type": "boolean"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

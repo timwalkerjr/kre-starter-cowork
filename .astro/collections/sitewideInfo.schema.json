@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "legalBusinessName": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$"
+    },
+    "address": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "logoDark": {
+      "type": "string"
+    },
+    "defaultCtaHtml": {
+      "type": "string"
+    },
+    "defaultFaqsHtml": {
+      "type": "string"
+    },
+    "valuePropsHtml": {
+      "type": "string"
+    },
+    "yearFounded": {
+      "type": "integer",
+      "minimum": -9007199254740991,
+      "maximum": 9007199254740991
+    },
+    "licenseNumbers": {
+      "type": "string"
+    },
+    "hoursOfOperation": {
+      "type": "string"
+    },
+    "emergencyResponseText": {
+      "type": "string"
+    },
+    "shortBrandStatement": {
+      "type": "string"
+    },
+    "longBrandStatement": {
+      "type": "string"
+    },
+    "socialFacebook": {
+      "type": "string",
+      "format": "uri"
+    },
+    "socialInstagram": {
+      "type": "string",
+      "format": "uri"
+    },
+    "socialYoutube": {
+      "type": "string",
+      "format": "uri"
+    },
+    "socialGoogleBusiness": {
+      "type": "string",
+      "format": "uri"
+    },
+    "reviewSubmissionGoogle": {
+      "type": "string",
+      "format": "uri"
+    },
+    "reviewSubmissionFacebook": {
+      "type": "string",
+      "format": "uri"
+    },
+    "mapEmbedUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "trustBadgesHtml": {
+      "type": "string"
+    },
+    "airtableRecordId": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  }
+}

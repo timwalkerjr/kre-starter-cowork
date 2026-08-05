@@ -1,0 +1,88 @@
+---
+import { getCollection, render } from 'astro:content';
+
+const entries = (await getCollection('faqs', ({ data }) => !data.draft))
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const faqs = await Promise.all(
+  entries.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { entry, Content };
+  })
+);
+---
+<section class="bg-surface py-20" data-ps="security-company-faq/FaqContent.astro">
+  <div class="max-w-4xl mx-auto px-6 lg:px-12">
+
+    <div class="space-y-4 mb-20">
+      {faqs.map(({ entry, Content }, i) => (
+        <div class={`tactical-frame bg-background reveal reveal-delay-${Math.min((i % 4) + 1, 5)}`}>
+          <details class="group">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer p-6 list-none">
+              <div class="flex items-start gap-4">
+                <span class="text-primary font-display font-bold text-xs mt-0.5 flex-shrink-0">
+                  {String(entry.data.order ?? i + 1).padStart(2, '0')}
+                </span>
+                <h3 class="font-display font-bold uppercase text-foreground text-base leading-tight">
+                  {entry.data.title}
+                </h3>
+              </div>
+              <span class="text-primary font-bold text-xl flex-shrink-0 group-open:rotate-45 transition-transform duration-150">+</span>
+            </summary>
+            <div class="px-6 pb-6 pt-0">
+              <div class="ml-10 border-l-2 border-primary pl-4">
+                <div class="text-muted-foreground text-sm leading-relaxed [&>p]:m-0">
+                  <Content />
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      ))}
+    </div>
+
+    <!-- Contact form prompt -->
+    <div id="faq-contact" class="bg-dark-background p-8 lg:p-12 tactical-frame reveal">
+      <div class="text-center mb-8">
+        <p class="text-primary font-display font-bold uppercase tracking-widest text-xs mb-3">
+          [ Still Have Questions? ]
+        </p>
+        <h2
+          class="font-display font-bold uppercase tracking-tight text-dark-foreground"
+          style="font-size: var(--text-h2); line-height: 1.1;"
+        >
+          Have a Question We Did Not Answer?
+        </h2>
+        <p class="text-dark-muted-foreground text-sm mt-3 max-w-lg mx-auto">
+          Fill out the form and our team will get back to you as soon as possible.
+        </p>
+      </div>
+      <div class="max-w-xl mx-auto space-y-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="w-full bg-transparent border border-dark-border text-dark-foreground placeholder-dark-muted-foreground font-sans text-sm px-4 py-3 focus:outline-none focus:border-primary transition-colors"
+        />
+        <input
+          type="email"
+          placeholder="Email Address"
+          class="w-full bg-transparent border border-dark-border text-dark-foreground placeholder-dark-muted-foreground font-sans text-sm px-4 py-3 focus:outline-none focus:border-primary transition-colors"
+        />
+        <textarea
+          rows="4"
+          placeholder="Your Question"
+          class="w-full bg-transparent border border-dark-border text-dark-foreground placeholder-dark-muted-foreground font-sans text-sm px-4 py-3 focus:outline-none focus:border-primary transition-colors resize-none"
+        ></textarea>
+        <div class="text-center">
+          <button
+            type="button"
+            class="inline-block bg-primary text-primary-foreground font-display font-bold uppercase tracking-widest text-sm px-10 py-4 border-2 border-primary hover:bg-primary-hover transition-colors duration-150"
+          >
+            Send Question
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

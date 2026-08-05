@@ -1,0 +1,52 @@
+---
+import Container from '@/components/Container.astro';
+
+const services = [
+  { title: "Event Staffing", slug: "school-event-staff" },
+  { title: "School Security", slug: "school-security" },
+  { title: "Security Guards", slug: "security-guards-pa" },
+  { title: "ACT 67 Certified Services", slug: "act-67-certified-services" },
+  { title: "Private Investigations", slug: "private-investigations" },
+  { title: "In-Home Security", slug: "in-home-security" },
+  { title: "Security Checks", slug: "security-checks" },
+  { title: "First Aid Training", slug: "first-aid-training" },
+  { title: "Vehicle Patrol", slug: "vehicle-patrol" },
+  { title: "Logistical Security", slug: "logistical-security" },
+  { title: "Armed Security", slug: "armed-security-pa" },
+  { title: "Warehouses & Distribution Centers", slug: "warehouse-distribution-security" },
+  { title: "Event Traffic Control", slug: "event-traffic-control" },
+  { title: "Process Services", slug: "process-services" },
+  { title: "Fire Watch", slug: "fire-watch" },
+  { title: "Armed Money Escorts", slug: "armed-money-escorts" }
+];
+---
+
+<section id="services" class="bg-surface py-20 lg:py-32" data-ps="src/components/home/Services.astro:dod6c7">
+  <Container>
+    <div class="text-center mb-16 lg:mb-24" data-ps="src/components/home/Services.astro:8cm2gw">
+      <div class="status-dot mb-4" data-ps="src/components/home/Services.astro:8cm2gv">SERVICE PORTFOLIO</div>
+      <h2 class="text-h2 text-foreground mb-6" data-ps="src/components/home/Services.astro:j6q9ba">"Your Total Security Professional"</h2>
+      <p class="text-muted-foreground max-w-2xl mx-auto italic" data-ps="src/components/home/Services.astro:vqhksi">
+        Comprehensive, professional, and responsive protection solutions tailored to your specific operational needs.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" data-ps="src/components/home/Services.astro:8cm2gu">
+      {services.map((service, index) => (
+        <a 
+          href={`/${service.slug}`} 
+          class="reveal bg-background p-8 tactical-frame no-underline group transition-all hover:bg-secondary hover:border-primary"
+         data-ps={`src/components/home/Services.astro:vi8crp-${index}`}>
+          <div class="text-foreground font-display font-bold text-[10px] tracking-[0.2em] mb-4" data-ps={`src/components/home/Services.astro:8cm2gt-${index}`}>CMD-SEC-0{index + 1}</div>
+          <h3 class="text-lg font-bold font-display text-foreground group-hover:text-secondary-foreground transition-colors uppercase leading-snug" data-ps={`src/components/home/Services.astro:ipom6d-${index}`}>
+            {service.title}
+          </h3>
+          <div class="mt-6 flex items-center gap-2 text-[10px] font-display font-bold text-muted-foreground group-hover:text-primary transition-colors tracking-widest uppercase" data-ps={`src/components/home/Services.astro:8cm2gs-${index}`}>
+            View Protocol
+            <svg class="w-3 h-3 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </div>
+        </a>
+      ))}
+    </div>
+  </Container>
+</section>

@@ -1,68 +1,39 @@
 ---
-const faqs = [
-  {
-    q: "Is Your Agency Properly Licensed?",
-    a: "Yes. KRE Security LLC. is licensed pursuant to the Pennsylvania Private Detective Act to conduct the business of private investigations throughout the state of Pennsylvania."
-  },
-  {
-    q: "Can Your Agency Conduct Investigations Outside of Pennsylvania?",
-    a: "We are currently only licensed in Pennsylvania to conduct private investigations, but have a vast network of investigative resources across the country and abroad."
-  },
-  {
-    q: "Does Your Agency Carry Liability Insurance?",
-    a: "Yes. KRE Security LLC. is bonded and insured to provide the services offered to our clients."
-  },
-  {
-    q: "Will Your Agency Record Conversations for Investigative Purposes?",
-    a: "No. Pursuant to the Pennsylvania Wiretap Law, it is illegal to conduct any investigations involving the interception or recording of audio between parties without their knowledge unless a court order has been issued, which is typically reserved for law enforcement authorities in the furtherance of a criminal investigation."
-  },
-  {
-    q: "Can You Guarantee the Outcome of an Investigation?",
-    a: "It would be inappropriate for an investigator to guarantee the outcome of any case. Private investigators are hired to gather information using their training, experience and network of resources in an attempt to verify information or suspicions that a client may have concerning certain circumstances."
-  },
-  {
-    q: "Why Does Your Agency Require a Retainer?",
-    a: "Investigative agencies normally require a retainer to protect the client and agency. The retainer is the contract between the client and agency that outlines the terms and conditions, including fees, of the services requested. The up front retainer fee is dependent upon the services to be performed and is used to budget the investigation. Any unused portions of the retainer fee are returned to the client, unless the fee is subjected to forfeiture under the terms and conditions."
-  },
-  {
-    q: "Does Your Agency Operate Under a Code of Conduct?",
-    a: "Yes. KRE Security LLC. conducts every investigation ethically, morally, legally and with the highest degree of integrity."
-  },
-  {
-    q: "How Do You Distribute Personal Information on Individuals Subjected to an Investigative Request?",
-    a: "There are laws such as the Gramm-Leach-Bliley Act of 1999 (GLBA), Fair Credit Reporting Act (FCRA) and Driver's Privacy Protection Act (DPPA) that govern the use of personal information. KRE Security/Investigations Inc. will not knowingly or intentionally violate these or any other laws pertaining to the release of personal information, and will not be held responsible if that information is misused by a third party requestor."
-  },
-  {
-    q: "Is All Communication with Clients Confidential?",
-    a: "Yes. Unless there is a legal obligation to release or identify a client, all information between a client and our agency is held in strict confidence."
-  },
-  {
-    q: "Do I Need to Speak with an Attorney Prior to Hiring a Private Investigator?",
-    a: "No. If you require the services of a private investigator, the decision to hire one is totally up to you; however, there are many circumstances that legal advice may be helpful and you should strongly consider speaking with an attorney if you are not familiar with the laws applicable to your situation."
-  },
-];
+import { getCollection, render } from 'astro:content';
+
+const entries = (await getCollection('faqs', ({ data }) => !data.draft))
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const faqs = await Promise.all(
+  entries.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { entry, Content };
+  })
+);
 ---
 <section class="bg-surface py-20" data-ps="security-company-faq/FaqContent.astro">
   <div class="max-w-4xl mx-auto px-6 lg:px-12">
 
     <div class="space-y-4 mb-20">
-      {faqs.map((faq, i) => (
+      {faqs.map(({ entry, Content }, i) => (
         <div class={`tactical-frame bg-background reveal reveal-delay-${Math.min((i % 4) + 1, 5)}`}>
           <details class="group">
             <summary class="flex items-center justify-between gap-4 cursor-pointer p-6 list-none">
               <div class="flex items-start gap-4">
                 <span class="text-primary font-display font-bold text-xs mt-0.5 flex-shrink-0">
-                  {String(i + 1).padStart(2, '0')}
+                  {String(entry.data.order ?? i + 1).padStart(2, '0')}
                 </span>
                 <h3 class="font-display font-bold uppercase text-foreground text-base leading-tight">
-                  {faq.q}
+                  {entry.data.title}
                 </h3>
               </div>
               <span class="text-primary font-bold text-xl flex-shrink-0 group-open:rotate-45 transition-transform duration-150">+</span>
             </summary>
             <div class="px-6 pb-6 pt-0">
               <div class="ml-10 border-l-2 border-primary pl-4">
-                <p class="text-muted-foreground text-sm leading-relaxed">{faq.a}</p>
+                <div class="text-muted-foreground text-sm leading-relaxed [&>p]:m-0">
+                  <Content />
+                </div>
               </div>
             </div>
           </details>

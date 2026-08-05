@@ -1,0 +1,116 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+// Listing order rule (mirrors legacy BlogListing array): entries without a
+// publishedDate first (collection id order: firefighting, wfmz), then newest first.
+export function sortArticles(list) {
+  const dated = list.filter((e) => e.data.publishedDate);
+  const undated = list.filter((e) => !e.data.publishedDate);
+  dated.sort((a, b) => b.data.publishedDate - a.data.publishedDate);
+  return [...undated, ...dated];
+}
+
+export async function getStaticPaths() {
+  const articles = sortArticles(await getCollection('articles', ({ data }) => !data.draft));
+  return articles.map((entry) => {
+    const related = articles.filter((e) => e.id !== entry.id).slice(0, 2);
+    return { params: { slug: entry.id }, props: { entry, related } };
+  });
+}
+
+const { entry, related } = Astro.props;
+const { data } = entry;
+const { Content } = await render(entry);
+---
+<BaseLayout
+  title={data.seoTitle ?? data.title}
+  description={data.seoMetaDescription}
+  jsonLd={data.jsonLdSchema ? JSON.parse(data.jsonLdSchema) : undefined}
+>
+  <!-- Post Hero -->
+  <section class="bg-background border-b border-border">
+    <div class="max-w-4xl mx-auto px-6 py-12 lg:py-16">
+      <a href="/blog/" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors mb-8 font-display">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to News
+      </a>
+      <div class="mb-4">
+        <span class="status-dot text-xs">{data.heroBadge ?? '[ Dispatch: Active Report ]'}</span>
+      </div>
+      <h1 class="font-display font-bold uppercase text-h2 leading-tight text-foreground mb-6">
+        {data.heroTitle ?? data.title}
+      </h1>
+      {data.heroTagline && (
+        <p class="text-muted-foreground font-sans text-sm uppercase tracking-widest mb-4">
+          {data.heroTagline}
+        </p>
+      )}
+      <div class="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+        <span class="uppercase tracking-widest text-xs font-bold font-display">
+          {data.author ?? 'KRE Security — Industry Intelligence'}
+        </span>
+        {data.displayDate && (
+          <span class="text-primary font-display font-bold uppercase text-xs tracking-widest">{data.displayDate}</span>
+        )}
+        {data.readingTime && <span class="text-muted-foreground text-xs">{data.readingTime}</span>}
+      </div>
+    </div>
+  </section>
+
+  {data.featuredImage && (
+    <section class="bg-surface">
+      <div class="max-w-4xl mx-auto px-6 pt-12">
+        <div class="tactical-frame overflow-hidden">
+          <img
+            src={data.featuredImage}
+            alt={data.title}
+            class="w-full h-auto object-cover"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Body: entry carries its own styled sections -->
+  <Content />
+
+  <!-- Related Posts -->
+  <section class="bg-dark-background border-t border-dark-border">
+    <div class="max-w-4xl mx-auto px-6 py-12 lg:py-16">
+      <div class="mb-8">
+        <span class="text-xs font-bold uppercase tracking-widest font-display text-dark-muted-foreground">[ Related Reports ]</span>
+        <h2 class="font-display font-bold uppercase text-h3 text-dark-foreground mt-2">More from KRE Security</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {related.map((post) => (
+          <a
+            href={`/post/${post.id}/`}
+            class="group bg-secondary border border-dark-border block overflow-hidden hover:border-primary transition-colors tactical-frame dark"
+          >
+            {post.data.featuredImage ? (
+              <div class="overflow-hidden">
+                <img
+                  src={post.data.featuredImage}
+                  alt={post.data.title}
+                  class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </div>
+            ) : (
+              <div class="h-40 bg-dark-background flex items-center justify-center">
+                <span class="text-primary font-display font-bold text-4xl uppercase">KRE</span>
+              </div>
+            )}
+            <div class="p-4">
+              <p class="text-sm font-bold text-dark-foreground font-display uppercase leading-snug group-hover:text-primary transition-colors">
+                {post.data.title}
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

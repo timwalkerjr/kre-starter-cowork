@@ -1,0 +1,148 @@
+---
+---
+<section id="first-aid-form" class="py-16 lg:py-24" style="background-color: var(--color-dark-background);">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+      <!-- Form -->
+      <div class="reveal-left">
+        <div class="mb-3">
+          <span class="status-dot">[ Training Quote: Available ]</span>
+        </div>
+        <h2 class="font-display font-bold uppercase tracking-tight text-dark-foreground mb-4"
+            style="font-size: var(--text-h2); line-height: 1.1;">
+          Request a Training Quote
+        </h2>
+        <p class="text-dark-muted-foreground mb-8 leading-relaxed">
+          Fill in your name, phone and email and we will contact you to discuss First Aid, CPR, and AED Training with you.
+        </p>
+
+        <form
+          method="POST"
+          action="/contact/"
+          class="space-y-4"
+        >
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="fa-first-name" class="block text-xs font-display font-bold uppercase tracking-widest text-dark-muted-foreground mb-1">
+                First Name *
+              </label>
+              <input
+                type="text"
+                id="fa-first-name"
+                name="first_name"
+                required
+                class="w-full border border-dark-border px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary transition-colors"
+                style="background-color: var(--color-secondary); color: var(--color-dark-foreground);"
+              />
+            </div>
+            <div>
+              <label for="fa-last-name" class="block text-xs font-display font-bold uppercase tracking-widest text-dark-muted-foreground mb-1">
+                Last Name
+              </label>
+              <input
+                type="text"
+                id="fa-last-name"
+                name="last_name"
+                class="w-full border border-dark-border px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary transition-colors"
+                style="background-color: var(--color-secondary); color: var(--color-dark-foreground);"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="fa-phone" class="block text-xs font-display font-bold uppercase tracking-widest text-dark-muted-foreground mb-1">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              id="fa-phone"
+              name="phone"
+              class="w-full border border-dark-border px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary transition-colors"
+              style="background-color: var(--color-secondary); color: var(--color-dark-foreground);"
+            />
+          </div>
+
+          <div>
+            <label for="fa-email" class="block text-xs font-display font-bold uppercase tracking-widest text-dark-muted-foreground mb-1">
+              Email Address *
+            </label>
+            <input
+              type="email"
+              id="fa-email"
+              name="email"
+              required
+              class="w-full border border-dark-border px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary transition-colors"
+              style="background-color: var(--color-secondary); color: var(--color-dark-foreground);"
+            />
+          </div>
+
+          <div>
+            <label for="fa-message" class="block text-xs font-display font-bold uppercase tracking-widest text-dark-muted-foreground mb-1">
+              Message
+            </label>
+            <textarea
+              id="fa-message"
+              name="message"
+              rows="4"
+              class="w-full border border-dark-border px-4 py-3 text-sm font-sans focus:outline-none focus:border-primary transition-colors resize-none"
+              style="background-color: var(--color-secondary); color: var(--color-dark-foreground);"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full border-2 font-display font-bold uppercase tracking-wider text-sm px-8 py-3 transition-colors duration-150"
+            style="border-color: var(--color-primary); background-color: var(--color-primary); color: var(--color-primary-foreground);"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Info + Image -->
+      <div class="flex flex-col gap-6 reveal-right">
+        <div class="tactical-frame overflow-hidden">
+          <img
+            src="https://pagesmith-cdn.com/d22f750a/images/39725c_6425aae246544e0892331fb709c801fb~mv2-320.webp"
+            alt="Group CPR and First Aid training"
+            width="320"
+            class="w-full max-w-[320px] h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+        <p class="text-sm leading-relaxed" style="color: var(--color-dark-muted-foreground);">
+          Group CPR, First Aid, AED Training are conducted by our firm both in the field or in our educational teaching location.
+        </p>
+
+        <div class="border border-dark-border p-5" style="background-color: var(--color-secondary);">
+          <p class="text-xs font-display font-bold uppercase tracking-widest mb-3" style="color: var(--color-primary);">
+            [ Contact Our Training Division ]
+          </p>
+          <div class="space-y-2">
+            <div>
+              <p class="text-xs uppercase tracking-widest text-dark-muted-foreground mb-1">Reading / Eastern PA</p>
+              <a href="tel:6105620971" class="font-display font-bold text-dark-foreground hover:text-primary transition-colors">
+                610-562-0971
+              </a>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-widest text-dark-muted-foreground mb-1">Allentown / Bethlehem</p>
+              <a href="tel:4843343577" class="font-display font-bold text-dark-foreground hover:text-primary transition-colors">
+                484-334-3577
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="/contact/"
+          class="inline-block border-2 font-display font-bold uppercase tracking-wider text-sm px-6 py-3 text-center transition-colors duration-150"
+          style="border-color: var(--color-primary); color: var(--color-primary);"
+        >
+          Contact Us Today to Get Started
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,159 @@
+---
+const responsibilities = [
+  "Access control and point-of-entry security",
+  "Greeting and directing visitors",
+  "CCTV and camera monitoring",
+  "Routine security patrols to support site safety",
+];
+
+const qualifications = [
+  "Stable work history",
+  "Clean background",
+  "Valid Pennsylvania Driver's License",
+];
+
+const benefits = [
+  "Bi-weekly direct deposit",
+  "Paid uniforms",
+  "Paid training and holiday pay",
+  "Veteran pay differential",
+  "24/7 management and staffing support",
+  "Family-owned company that values its employees",
+];
+
+const positions = [
+  "Armed Act 235 Security Agent",
+  "School Security Agent",
+  "Seasonal Security Agent",
+  "Retail Security Agent",
+  "Weekend Commercial Security Agents",
+];
+
+const areas = [
+  "Berks", "Schuylkill", "Lehigh", "Carbon",
+  "Lancaster", "Lebanon", "Montgomery", "Pottsville",
+];
+
+const candidates = [
+  "Retiree", "Law Enforcement", "Corrections",
+  "Security", "Public Safety", "Veterans", "College Students",
+];
+---
+
+<section class="bg-surface py-20">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Intro -->
+    <div class="max-w-3xl mb-16 reveal">
+      <p class="font-display text-xs uppercase tracking-widest text-muted-foreground mb-3">
+        [ Join Our Team ]
+      </p>
+      <h2 class="font-display font-bold uppercase tracking-tight text-foreground text-h2 mb-6">
+        Join the KRE Security Team
+      </h2>
+      <div class="space-y-4 font-sans text-muted-foreground text-sm leading-relaxed">
+        <p>
+          KRE Security LLC offers a supplemental benefits package with partial employer contribution to employees who average 30 hours or more per week. We are proud to support the officers who represent our company and the clients we serve.
+        </p>
+        <p>
+          As our reputation continues to grow throughout Berks, Lancaster, Lehigh, and Schuylkill Counties and beyond, we are seeking professional security officers who demonstrate strong customer service skills, reliability, and sound security awareness.
+        </p>
+        <p>
+          We are currently hiring part-time security officers for weekday, evening, overnight, and weekend shifts. At KRE Security, you're not just another number. As a locally owned company, we take pride in building a team of professionals who support each other and provide exceptional service to our clients.
+        </p>
+        <p>
+          Officers may work at a consistent site or multiple client locations, depending on availability and preference. Whether you have prior security experience or are looking to start a new career, we're willing to train the right candidates.
+        </p>
+        <p class="font-semibold text-foreground">
+          Employees working 30+ hours per week who successfully complete our 60-day probationary period are eligible for Capital Blue Cross PPO health insurance with minimal employee contribution.
+        </p>
+      </div>
+    </div>
+
+    <!-- Three-column grid: Responsibilities / Qualifications / Benefits -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+
+      <div class="tactical-frame bg-background p-6 reveal">
+        <p class="font-display text-xs uppercase tracking-widest text-primary mb-4">[ Responsibilities ]</p>
+        <h3 class="font-display font-bold text-foreground uppercase text-sm mb-4">Typical Responsibilities</h3>
+        <ul class="space-y-2">
+          {responsibilities.map((item) => (
+            <li class="flex items-start gap-2 font-sans text-muted-foreground text-sm">
+              <span class="text-primary mt-0.5 shrink-0">▸</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="tactical-frame bg-background p-6 reveal reveal-delay-1">
+        <p class="font-display text-xs uppercase tracking-widest text-primary mb-4">[ Requirements ]</p>
+        <h3 class="font-display font-bold text-foreground uppercase text-sm mb-4">Basic Qualifications</h3>
+        <ul class="space-y-2 mb-6">
+          {qualifications.map((item) => (
+            <li class="flex items-start gap-2 font-sans text-muted-foreground text-sm">
+              <span class="text-primary mt-0.5 shrink-0">▸</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+        <p class="font-display text-xs uppercase tracking-widest text-primary mb-4 mt-6">[ Encouraged to Apply ]</p>
+        <ul class="space-y-2">
+          {candidates.map((item) => (
+            <li class="flex items-start gap-2 font-sans text-muted-foreground text-sm">
+              <span class="text-primary mt-0.5 shrink-0">▸</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="tactical-frame bg-background p-6 reveal reveal-delay-2">
+        <p class="font-display text-xs uppercase tracking-widest text-primary mb-4">[ Compensation ]</p>
+        <h3 class="font-display font-bold text-foreground uppercase text-sm mb-4">Why Work With KRE Security?</h3>
+        <ul class="space-y-2">
+          {benefits.map((item) => (
+            <li class="flex items-start gap-2 font-sans text-muted-foreground text-sm">
+              <span class="text-primary mt-0.5 shrink-0">▸</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Positions + areas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <div class="border border-border bg-background p-6 reveal">
+        <p class="font-display text-xs uppercase tracking-widest text-muted-foreground mb-3">[ Open Roles ]</p>
+        <h3 class="font-display font-bold text-foreground uppercase text-sm mb-4">Current Positions</h3>
+        <ul class="space-y-2">
+          {positions.map((p) => (
+            <li class="flex items-center gap-2 font-sans text-muted-foreground text-sm">
+              <span class="w-1.5 h-1.5 bg-primary rounded-full shrink-0"></span>
+              {p}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="border border-border bg-background p-6 reveal reveal-delay-1">
+        <p class="font-display text-xs uppercase tracking-widest text-muted-foreground mb-3">[ Service Regions ]</p>
+        <h3 class="font-display font-bold text-foreground uppercase text-sm mb-4">Areas of Employment</h3>
+        <div class="grid grid-cols-2 gap-2">
+          {areas.map((a) => (
+            <span class="font-sans text-muted-foreground text-sm flex items-center gap-2">
+              <span class="w-1.5 h-1.5 bg-primary rounded-full shrink-0"></span>
+              {a}
+            </span>
+          ))}
+        </div>
+        <p class="font-sans text-muted-foreground text-xs mt-4 italic">And many more surrounding counties.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>

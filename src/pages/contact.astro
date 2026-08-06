@@ -3,8 +3,12 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import ContactHero from '@/components/contact/ContactHero.astro';
 import ContactOffices from '@/components/contact/ContactOffices.astro';
 import ContactForm from '@/components/contact/ContactForm.astro';
+import { contactGraph } from '@/lib/schema';
+
+const jsonLd = contactGraph(Astro.site.href);
 ---
 <BaseLayout
+  jsonLd={jsonLd}
   title="Contact | Eastern Pennsylvania | KRE Security"
   description="We offer 24 Hour Security Services - meeting Your Security and Investigation Needs. All Hours of The Day!"
 >

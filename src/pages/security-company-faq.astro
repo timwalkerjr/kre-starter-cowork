@@ -2,8 +2,20 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import FaqHero from '@/components/security-company-faq/FaqHero.astro';
 import FaqContent from '@/components/security-company-faq/FaqContent.astro';
+import { getCollection } from 'astro:content';
+import { faqGraph } from '@/lib/schema';
+
+// FAQPage answers must be plain text. Entry bodies are markdown, so strip
+// markup and collapse whitespace rather than shipping HTML into the schema.
+const faqEntries = (await getCollection('faqs', ({ data }) => !data.draft))
+  .sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+const jsonLd = faqGraph(Astro.site.href, faqEntries.map((e) => ({
+  question: e.data.title,
+  answer: e.body.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim(),
+})));
 ---
 <BaseLayout
+  jsonLd={jsonLd}
   title="Security Company FAQs | Eastern PA | KRE Security"
   description="KRE Security offers professional armed & unarmed security services, private investigations, more. Learn more on our FAQ or give us a call, we are happy to help!"
 >

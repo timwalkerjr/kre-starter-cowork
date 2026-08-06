@@ -3,8 +3,11 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import SecurityServicesHero from '@/components/security-services-pa/SecurityServicesHero.astro';
 import SecurityServicesTeam from '@/components/security-services-pa/SecurityServicesTeam.astro';
 import SecurityServicesLeader from '@/components/security-services-pa/SecurityServicesLeader.astro';
+import { pageGraph } from '@/lib/schema';
+const jsonLd = pageGraph(Astro.site.href, { name: 'About KRE Security', path: '/security-services-pa/', type: 'AboutPage' });
 ---
 <BaseLayout
+  jsonLd={jsonLd}
   title="Security Services - About Us | Eastern PA | KRE Security"
   description="We provide factually based investigations and conduct every investigation ethically, morally, legally and with the highest degree of integrity. Our goal is to meet your security needs 24-7 while providing cost effective services to our customers."
 >

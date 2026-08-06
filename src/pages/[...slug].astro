@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { serviceGraph, localServiceGraph } from '@/lib/schema';
 
 export async function getStaticPaths() {
   const services = await getCollection('services', ({ data }) => !data.draft);
@@ -14,11 +15,27 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { data } = entry;
 const { Content } = await render(entry);
+
+// JSON-LD: an entry may override via `jsonLdSchema`; otherwise generate from
+// the entry's own fields so every page carries structured data automatically.
+const siteUrl = Astro.site.href;
+const path = `/${entry.id}/`;
+const generated =
+  entry.collection === 'localServicePages'
+    ? localServiceGraph(siteUrl, {
+        name: data.title, description: data.seoMetaDescription,
+        path, image: data.mainImage, areaName: data.cityName ?? data.title,
+      })
+    : serviceGraph(siteUrl, {
+        name: data.title, description: data.seoMetaDescription,
+        path, image: data.mainImage,
+      });
+const jsonLd = data.jsonLdSchema ? JSON.parse(data.jsonLdSchema) : generated;
 ---
 <BaseLayout
   title={data.seoTitle ?? data.title}
   description={data.seoMetaDescription}
-  jsonLd={data.jsonLdSchema ? JSON.parse(data.jsonLdSchema) : undefined}
+  jsonLd={jsonLd}
 >
   <!-- Hero -->
   <section class="bg-dark-background py-20 lg:py-28">

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import BlogHero from '@/components/blog/BlogHero.astro';
+import { blogGraph } from '@/lib/schema';
 
 // Legacy BlogListing order: entries without publishedDate first (collection id
 // order: firefighting, wfmz), then by publishedDate descending.
@@ -10,8 +11,11 @@ const dated = all.filter((e) => e.data.publishedDate);
 const undated = all.filter((e) => !e.data.publishedDate);
 dated.sort((a, b) => b.data.publishedDate - a.data.publishedDate);
 const posts = [...undated, ...dated];
+
+const jsonLd = blogGraph(Astro.site.href, posts.map((p) => ({ title: p.data.title, path: `/post/${p.id}/` })));
 ---
 <BaseLayout
+  jsonLd={jsonLd}
   title="Security Guard Services Blog | Hamburg, PA | KRE Security LLC."
   description="We provide qualified, educated and professional law enforcement, security services protection, and investigation service for Berks, Lehigh, Montgomery, Bucks county and surrounding areas. Check out our blog to learn more about security and keeping your home or business safe."
 >

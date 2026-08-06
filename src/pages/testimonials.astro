@@ -2,8 +2,16 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import TestimonialsHero from '@/components/testimonials/TestimonialsHero.astro';
+import { reviewsGraph } from '@/lib/schema';
 
 const entries = await getCollection('reviews', ({ data }) => !data.draft);
+// Review nodes carry author + body only. No ratingValue and no
+// aggregateRating — neither is verified, and inventing them is review fraud.
+const jsonLd = reviewsGraph(Astro.site.href, entries.map((e) => ({
+  author: e.data.author ?? 'Client',
+  body: e.body.replace(/\s+/g, ' ').trim(),
+})));
+
 const testimonials = await Promise.all(
   entries.map(async (entry) => {
     const { Content } = await render(entry);
@@ -12,6 +20,7 @@ const testimonials = await Promise.all(
 );
 ---
 <BaseLayout
+  jsonLd={jsonLd}
   title="Testimonials | KRE Security"
   description="See what our clients say about KRE Security's professional security guard and investigation services across Eastern Pennsylvania."
 >

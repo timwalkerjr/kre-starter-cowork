@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { articleGraph } from '@/lib/schema';
 
 // Listing order rule (mirrors legacy BlogListing array): entries without a
 // publishedDate first (collection id order: firefighting, wfmz), then newest first.
@@ -22,11 +23,22 @@ export async function getStaticPaths() {
 const { entry, related } = Astro.props;
 const { data } = entry;
 const { Content } = await render(entry);
+
+const siteUrl = Astro.site.href;
+const generated = articleGraph(siteUrl, {
+  headline: data.title,
+  description: data.seoMetaDescription ?? data.shortSummary,
+  path: `/post/${entry.id}/`,
+  image: data.featuredImage,
+  datePublished: data.publishedDate ? data.publishedDate.toISOString().slice(0, 10) : undefined,
+  author: data.author,
+});
+const jsonLd = data.jsonLdSchema ? JSON.parse(data.jsonLdSchema) : generated;
 ---
 <BaseLayout
   title={data.seoTitle ?? data.title}
   description={data.seoMetaDescription}
-  jsonLd={data.jsonLdSchema ? JSON.parse(data.jsonLdSchema) : undefined}
+  jsonLd={jsonLd}
 >
   <!-- Post Hero -->
   <section class="bg-background border-b border-border">

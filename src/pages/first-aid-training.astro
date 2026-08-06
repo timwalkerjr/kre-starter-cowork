@@ -3,8 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import FirstAidHero from '../components/first-aid-training/FirstAidHero.astro';
 import FirstAidCourses from '../components/first-aid-training/FirstAidCourses.astro';
 import FirstAidForm from '../components/first-aid-training/FirstAidForm.astro';
+import { serviceGraph } from '@/lib/schema';
+const jsonLd = serviceGraph(Astro.site.href, { name: 'First Aid, CPR & AED Training', path: '/first-aid-training/' });
 ---
 <BaseLayout
+  jsonLd={jsonLd}
   title="First Aid Training | Eastern Pennsylvania | KRE Security"
   description="KRE Security LLC. offers custom based CPR/First Aid and AED Training, for your business, facility, or civic or private groups needs. We can get you or your group certified in first aid and CPR!"
 >

@@ -1,10 +1,8 @@
 // @ts-check
-import cloudflare from '@astrojs/cloudflare';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
-import { sessionDrivers } from 'astro/config';
 import { globSync } from 'glob';
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -45,17 +43,7 @@ export default defineConfig({
   compressHTML: true,
   output: 'static',
   trailingSlash: 'always',
-  adapter: cloudflare({
-    imageService: 'passthrough',
-    prerenderEnvironment: 'node',
-  }),
-  // Astro 6 + @astrojs/cloudflare 13 auto-provision a SESSION KV namespace
-  // per deploy. Pinning a non-KV driver tells the adapter "sessions are
-  // handled" so it skips emitting the SESSION binding. Our pages are static
-  // and never call Astro.session at runtime.
-  session: {
-    driver: sessionDrivers.lruCache(),
-  },
+  // No adapter: static.app serves flat HTML. Output goes to dist/ directly.
   site: siteUrl,
   // CSRF origin check for form-encoded POST/PUT/PATCH/DELETE. This is the
   // Astro 5/6 default; pinned explicitly so a template edit can't silently

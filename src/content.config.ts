@@ -1,4 +1,7 @@
-// T. Walker Co canonical content collections — Pagesmith/Astro schema pack v1.1 (KRE Security)
+// T. Walker Co content collections — schema pack v1.1, TRIMMED for KRE Security.
+// Only the 5 collections this client actually uses are defined: services,
+// localServicePages, articles, faqs, reviews. The canonical 12-collection pack lives in
+// the static-starter-pipeline skill; add a collection here only when the client needs it.
 // Source of truth: schema pack v1.0 (Webflow "wmroofit-20260615" syncflowai schema, 2026-08-04),
 // as landed on the Joseph A. Simon Pagesmith clone. See project docs schema-pack-notes.md and
 // schema-pack-content.config.ts.md for the full field mapping and adaptation rationale.
@@ -41,16 +44,6 @@ const ctaFaqFields = {
 
 /* ---------- taxonomy ---------- */
 
-const siteCategories = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/site-categories' }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
-    image: z.string().optional(),
-    parent: z.string().optional(),
-    ...syncFields,
-  }),
-});
 
 /* ---------- core page-generating collections ---------- */
 
@@ -70,21 +63,6 @@ const services = defineCollection({
   }),
 });
 
-const serviceAreas = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/service-areas' }),
-  schema: z.object({
-    title: z.string(),
-    category: z.string().optional(),
-    cityName: z.string().optional(),
-    ...heroFields,
-    shortSummary: z.string().optional(),
-    mainImage: z.string().optional(),
-    coverageList: z.string().optional(),
-    ...ctaFaqFields,
-    ...seoFields,
-    ...syncFields,
-  }),
-});
 
 const localServicePages = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/local-service-pages' }),
@@ -119,41 +97,7 @@ const articles = defineCollection({
   }),
 });
 
-const projects = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
-  schema: z.object({
-    title: z.string(),
-    category: z.string().optional(),
-    ...heroFields,
-    shortSummary: z.string().optional(),
-    mainImage: z.string().optional(),
-    projectDate: z.coerce.date().optional(),
-    gallery: z.array(z.string()).optional(),
-    testimonial: z.string().optional(),
-    testimonialAuthor: z.string().optional(),
-    servicePerformed: z.string().optional(),
-    serviceArea: z.string().optional(),
-    overlayColor: z.string().optional(),
-    ...ctaFaqFields,
-    ...seoFields,
-    ...syncFields,
-  }),
-});
 
-const genPages = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/gen-pages' }),
-  schema: z.object({
-    title: z.string(),
-    category: z.string().optional(),
-    menuName: z.string().optional(),
-    ...heroFields,
-    shortSummary: z.string().optional(),
-    mainImage: z.string().optional(),
-    ...ctaFaqFields,
-    ...seoFields,
-    ...syncFields,
-  }),
-});
 
 /* ---------- supporting content collections ---------- */
 
@@ -186,88 +130,15 @@ const reviews = defineCollection({
   }),
 });
 
-const teamMembers = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/team-members' }),
-  schema: z.object({
-    title: z.string(),
-    category: z.string().optional(),
-    ...heroFields,
-    jobTitle: z.string().optional(),
-    bioSummary: z.string().optional(),
-    mainImage: z.string().optional(),
-    credentials: z.string().optional(),
-    email: z.string().email().optional(),
-    phone: z.string().optional(),
-    twitterLink: z.string().url().optional(),
-    facebookLink: z.string().url().optional(),
-    linkedinLink: z.string().url().optional(),
-    callToAction: z.string().optional(),
-    ...seoFields,
-    ...syncFields,
-  }),
-});
 
 /* ---------- data collections (no pages generated) ---------- */
 
-const sitewideInfo = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/sitewide-info' }),
-  schema: z.object({
-    legalBusinessName: z.string().optional(),
-    phone: z.string().optional(),
-    email: z.string().email().optional(),
-    address: z.string().optional(),
-    logo: z.string().optional(),
-    logoDark: z.string().optional(),
-    defaultCtaHtml: z.string().optional(),
-    defaultFaqsHtml: z.string().optional(),
-    valuePropsHtml: z.string().optional(),
-    yearFounded: z.number().int().optional(),
-    licenseNumbers: z.string().optional(),
-    hoursOfOperation: z.string().optional(),
-    emergencyResponseText: z.string().optional(),
-    shortBrandStatement: z.string().optional(),
-    longBrandStatement: z.string().optional(),
-    socialFacebook: z.string().url().optional(),
-    socialInstagram: z.string().url().optional(),
-    socialYoutube: z.string().url().optional(),
-    socialGoogleBusiness: z.string().url().optional(),
-    reviewSubmissionGoogle: z.string().url().optional(),
-    reviewSubmissionFacebook: z.string().url().optional(),
-    mapEmbedUrl: z.string().url().optional(),
-    trustBadgesHtml: z.string().optional(),
-    airtableRecordId: z.string().optional(),
-  }),
-});
 
-const brandVoice = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/brand-voice' }),
-  schema: z.object({
-    coreVoice: z.string().optional(),
-    toneSummary: z.string().optional(),
-    style: z.string().optional(),
-    targetAudience: z.string().optional(),
-    keyMessages: z.string().optional(),
-    writingExamples: z.string().optional(),
-    toneAdjectives: z.string().optional(),
-    vocabulary: z.string().optional(),
-    signaturePhrases: z.string().optional(),
-    pageStructure: z.string().optional(),
-    seoConventions: z.string().optional(),
-    airtableRecordId: z.string().optional(),
-  }),
-});
 
 export const collections = {
-  siteCategories,
   services,
-  serviceAreas,
   localServicePages,
   articles,
-  projects,
-  genPages,
   faqs,
   reviews,
-  teamMembers,
-  sitewideInfo,
-  brandVoice,
 };

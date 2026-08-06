@@ -1,0 +1,25 @@
+name: Deploy to static.app
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SITE_URL: https://kre-security.staticdomains.app
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and deploy to static.app
+        uses: designmodo/static-app-deploy-action@v1.0.0
+        with:
+          api-key: ${{ secrets.STATIC_APP_API_KEY }}
+          pid: 149slqnxza
+          install-command: 'npm install'
+          build-command: 'npm run build'
+          build-dir: 'dist'
+          node-version: '22'
